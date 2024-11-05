@@ -1,0 +1,500 @@
+<html><head><title>Copyright - sox_ng wiki</title></head>
+<body><p align=center>sox_ng wiki - Copyright</p>
+<hr>
+<h1 id="copyright">Copyright</h1>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>SoX is GPL2-only because <code>src/opus.c</code> is based on <code>oggenc.c</code> which is GPL2
+so the work as a whole is GPL2.
+Individual source files have further licence terms which should be
+respected if they are reused.</p>
+
+<p>Let&#8217;s have a look.</p>
+
+<h2 id="blanketcopyrightstatement">Blanket copyright statement</h2>
+
+<p>SoX&#8217;s <code>COPYING</code> file reads:</p>
+
+<pre><code>SoX source code is distributed under two main licenses. The two
+licenses are in the files LICENSE.GPL and LICENSE.LGPL.
+
+sox.c, and thus SoX-the user application, is distributed under the
+GPL, while the files that make up libsox are licensed under the less
+restrictive LGPL.
+</code></pre>
+
+<p>where <code>LICENSE.GPL</code> is the GPL Version 2 or later and
+<code>LICENSE.LGPL</code> is the LGPL Version 2.1 or later.</p>
+
+<p>The top level <code>Makefile.am</code> and <code>configure.ac</code> and
+<code>src/{Makefile.am,optional-fmts.am}</code> have no copyright notice.</p>
+
+<h2 id="193src.chfiles:">193 <code>src/*.[ch]</code> files:</h2>
+
+<h3 id="179arefreesoftware">179 are free software</h3>
+
+<h4 id="139aregpl">139 are GPL</h4>
+
+<p>and have one of</p>
+
+<pre><code> * Copyright (C) 1996-2007
+ *            Thomas Sailer (sailer@ife.ee.ethz.ch) (HB9JNX/AE4WA)
+ *            Swiss Federal Institute of Technology, Electronics Lab
+ * Copyright (C) 1999 Jan Paul Schmidt &lt;jps@fundament.org&gt;
+ * Copyright (C) 1999 Stanley J. Brooks &lt;stabro@megsinet.net&gt;
+ * Copyright (C) 2000-2002 Richard W.E. Furse, Paul Barton-Davis, Stefan Westerfeld.
+ * Copyright 2005-2012 Chris Bagwell and SoX Contributors
+ * (c) 2005-11 Chris Bagwell and SoX contributors
+ * (c) 2006-14 robs@users.sourceforge.net
+ * (c) 2007 robs@users.sourceforge.net
+ * (c) Reuben Thomas &lt;rrt@sc3d.org&gt; 2007
+ * Copyright 2007 Reuben Thomas &lt;rrt@sc3d.org&gt;
+ * Copyright (c) 2008 robs@users.sourceforge.net
+ * (c) 2011 Doug Cook and SoX contributors
+ * Copyright (c) 2007-9 SoX contributors
+ * (c) 2006-2012 SoX contributors
+ * (c) SoX Contributers
+</code></pre>
+
+<p>and one of</p>
+
+<pre><code> * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the
+ * Free Software Foundation; either version 2 of the License, or (at your
+ * option) any later version.
+</code></pre>
+
+<p>or</p>
+
+<pre><code> * This library is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2.1 of the License, or (at
+ * your option) any later version.
+</code></pre>
+
+<h4 id="38arefreelydistributableforanypurpose">38 are &#8220;freely distributable for any purpose&#8221;</h4>
+
+<h5 id="30haveoneof:">30 have one of:</h5>
+
+<pre><code> * Copyright 1991-2007 Guido van Rossum And Sundry Contributors
+ * Copyright 1991-2007 Lance Norskog And Sundry Contributors
+ * Copyright 1992 Leigh Smith And Sundry Contributors
+ * Copyright 1997 Chris Bagwell And Sundry Contributors
+ * (c) 1998-2012 Chris Bagwell and SoX contributors
+ * Copyright 1999-2006 Chris Bagwell And Nick Bailey
+ * Copyright (C) 1998 Juergen Mueller And Sundry Contributors
+ * Copyright 1999 Ian Turner (vectro@vectro.org)
+ * Copyright (c) 2000 Edward Beingessner And Sundry Contributors
+</code></pre>
+
+<h5 id="opus.c"><code>opus.c</code></h5>
+
+<pre><code> * Copyright (C) 2013 John Stumpo &lt;stump@jstump.com&gt;
+ *
+ * Largely based on vorbis.c:
+ * libSoX Ogg Vorbis sound format handler
+ * Copyright 2001, Stan Seibert &lt;indigo@aztec.asu.edu&gt;
+ *
+ * Portions from oggenc, (c) Michael Smith &lt;msmith@labyrinth.net.au&gt;,
+ * ogg123, (c) Kenneth Arnold &lt;kcarnold@yahoo.com&gt;, and
+ * libvorbisfile (c) Xiphophorus Company
+ ...
+ * July 5, 1991 - Skeleton file
+ * Copyright 1991 Lance Norskog And Sundry Contributors
+ ...
+ * This source code is freely redistributable and may be used for
+ * any purpose.    This copyright notice must be maintained.
+</code></pre>
+
+<ul>
+<li><code>oggenc.c</code> in the distribution <code>vorbis-tools</code> is GPLv2 (<em>not</em> &#8220;or later&#8221;)</li>
+<li><code>vorbis.c</code> does not exist in <code>vorbis-tools</code> but all other files
+copyrighted to Stan Seibert are GPLv2. so this file is not
+&#8220;freely distributable&#8221; but GPLv2.</li>
+</ul>
+
+<h5 id="fft4g.c"><code>fft4g.c</code></h5>
+
+<pre><code>/* Copyright Takuya OOURA, 1996-2001.
+
+You may use, copy, modify and distribute this code for any purpose
+(include commercial use) and without fee.
+Please refer to this package when you modify this code.
+
+Package home:    http://www.kurims.kyoto-u.ac.jp/~ooura/fft.html&quot;
+</code></pre>
+
+<p>and the link is question is still on the web (on 2024&#8211;06&#8211;14).</p>
+
+<h5 id="g711.ch"><code>g711.[ch]</code></h5>
+
+<pre><code> * Permission to use, copy, modify, and distribute this software and its
+ * documentation for any purpose and without fee is hereby granted, provided
+ * that the above copyright notice appear in all copies and that both that
+ * copyright notice and this permission notice appear in supporting
+ * documentation.
+</code></pre>
+
+<h5 id="g721.cg723_24.cg723_40.cg72x.h"><code>g721.c</code> <code>g723_24.c</code> <code>g723_40.c</code> <code>g72x.h</code></h5>
+
+<pre><code> * This source code is a product of Sun Microsystems, Inc. and is provided
+ * for unrestricted use.    Users may copy or modify this source code without
+ * charge.
+</code></pre>
+
+<h5 id="sndio.c"><code>sndio.c</code></h5>
+
+<pre><code> * Copyright (c) 2009 Alexandre Ratchov &lt;alex@caoua.org&gt;
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+</code></pre>
+
+<h4 id="2arebothgplandfreelydistributableforanypurpose">2 are both GPL and &#8220;freely distributable for any purpose&#8221;</h4>
+
+<h5 id="synth.c"><code>synth.c</code></h5>
+
+<pre><code> * Copyright (c) 2001-2009 SoX contributors
+ * Copyright (c) Jan 2001    Carsten Borchardt
+ *
+ * This source code is freely redistributable and may be used for any purpose.
+ * This copyright notice must be maintained.    The authors are not responsible
+ * for the consequences of using this software.
+ *
+ * Except for synth types: pluck, tpdf, pinknoise, &amp; brownnoise, and
+ *                        sweep types: linear, square &amp; exp, which are:
+ *
+ * Copyright (c) 2006-2013 robs@users.sourceforge.net
+ *
+ * This library is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2.1 of the License, or (at
+ * your option) any later version.
+</code></pre>
+
+<h5 id="formats.c"><code>formats.c</code></h5>
+
+<pre><code> * (c) 2005-8 Chris Bagwell and SoX contributors
+ *
+ * This library is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2.1 of the License, or (at
+ * your option) any later version.
+</code></pre>
+
+<p>and at line 1255 of 1288:</p>
+
+<pre><code> * (c) 2005-9 Chris Bagwell and SoX contributors.
+ * Copyright 1991 Lance Norskog And Sundry Contributors.
+ *
+ * This source code is freely redistributable and may be used for any
+ * purpose.    This copyright notice must be maintained.
+</code></pre>
+
+<h3 id="14arenotcopyrighted">14 are not copyrighted</h3>
+
+<h4 id="2havenostatementofcopyrightholder">2 have no statement of copyright holder</h4>
+
+<h5 id="effects.handfft4g.h"><code>effects.h</code> and <code>fft4g.h</code></h5>
+
+<pre><code>/* This library is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2.1 of the License, or (at
+ * your option) any later version.
+</code></pre>
+
+<p>Both were originally committed by Rob Sykes, who writes on 2024&#8211;07&#8211;13:</p>
+
+<blockquote>
+<p>both of those headers look like my handiwork so feel free
+to add my name to them.</p>
+</blockquote>
+
+<h4 id="6arecopyrightedwithnolicencestatement">6 are copyrighted with no licence statement</h4>
+
+<h5 id="coreaudio.candpulseaudio.c"><code>coreaudio.c</code> and <code>pulseaudio.c</code></h5>
+
+<pre><code> * Copyright 2008 Chris Bagwell And Sundry Contributors
+</code></pre>
+
+<h5 id="dcshift.c"><code>dcshift.c</code></h5>
+
+<pre><code> * (c) 2000.04.15 Chris Ausbrooks &lt;weed@bucket.pp.ualr.edu&gt;
+ *
+ * based on vol.c which is
+ * (c) 20/03/2000 Fabien COELHO &lt;fabien@coelho.net&gt; for sox.
+</code></pre>
+
+<h5 id="stretch.c"><code>stretch.c</code></h5>
+
+<pre><code>(c) march/april 2000 Fabien COELHO &lt;fabien@coelho.net&gt; for sox.
+</code></pre>
+
+<h5 id="vol.c"><code>vol.c</code></h5>
+
+<pre><code>/* Copyright (c) 20/03/2000 Fabien COELHO &lt;fabien@coelho.net&gt;
+ * Copyright (c) 2000-2007 SoX contributors
+</code></pre>
+
+<h5 id="wav.c"><code>wav.c</code></h5>
+
+<pre><code> * Copyright 1998-2006 Chris Bagwell and SoX Contributors
+ * Copyright 1997 Graeme W. Gill, 93/5/17
+ * Copyright 1992 Rick Richardson
+ * Copyright 1991 Lance Norskog And Sundry Contributors
+</code></pre>
+
+<h4 id="2areattributedbuthavenocopyrightstatement">2 are attributed but have no copyright statement</h4>
+
+<h5 id="mp3.c"><code>mp3.c</code></h5>
+
+<pre><code> * Written by Fabrizio Gennari &lt;fabrizio.ge@tiscali.it&gt;
+ *
+ * The decoding part is based on the decoder-tutorial program madlld
+ * written by Bertrand Petit &lt;madlld@phoe.fmug.org&gt;
+</code></pre>
+
+<h5 id="silence.c"><code>silence.c</code></h5>
+
+<pre><code> * by Heikki Leinonen (heilei@iki.fi) 25.03.2001
+ * Major Modifications by Chris Bagwell 06.08.2001
+ * Minor addition by Donnie Smith 13.08.2003
+</code></pre>
+
+<h4 id="4havenocopyrightstatement">4 have no copyright statement</h4>
+
+<h5 id="8svx.c"><code>8svx.c</code></h5>
+
+<h5 id="dft_filter.h"><code>dft_filter.h</code></h5>
+
+<h5 id="dither.h"><code>dither.h</code></h5>
+
+<h5 id="soxomp.h"><code>soxomp.h</code></h5>
+
+<h2 id="lpc10">lpc10</h2>
+
+<p><code>lpc10</code> is a low bandwidth speech codec by the US Department of Defense
+whose source code is included in SoX.</p>
+
+<p>No files in 14.4.2&#8217;s <code>lpc10/</code> directory contain copyright statements
+and were derived by translating the original Fortran code to C using <code>f2c</code>
+and hand-editing the results.</p>
+
+<p>The <a href="https://github.com/jafingerhut/lpc10/blob/main/original-code">original Fortran code</a>
+was written by the US Department of Defense, its file modification times
+range from February 1990 to October 1993 and it contains no copyright notices
+but its <code>README</code> file is headed</p>
+
+<pre><code>                            U.S. Department of Defense
+                         LPC-10 2400 bps Voice Coder
+                                     Release 1.0
+                                     October 1993
+</code></pre>
+
+<p>and its FAQ file says</p>
+
+<pre><code>The &quot;AD&quot; ordering number for the CELP software is AD M000 118
+(US$ 90.00) and for the TIB it's AD A256 629 (US$ 17.50).    The LPC-10
+standard, described below, is FIPS Pub 137 (US$ 12.50).    There is a
+$3.00 shipping charge on all U.S. orders.    The telephone number for
+their automated system is 703-487-4650, or 703-487-4600 if you'd prefer
+to talk with a real person.
+
+(U.S. DoD personnel and contractors can receive the package from the
+Defense Technical Information Center:    DTIC, Building 5, Cameron
+Station, Alexandria, VA 22304-6145.    Their telephone number is
+703-274-7633.)
+</code></pre>
+
+<p>It was translated to C from February to October 1996 and is maintained
+<a href="https://github.com/jafingerhut/lpc10">on github</a> by its translator
+who wrote in its <code>README</code> file:</p>
+
+<blockquote>
+<p>Because of the history of this implementation, the copyright
+and license status is still not completely clear to me,
+for reasons discussed further below. It might be in the
+public domain, but if the legal answer matters to you
+in any significant way, I suggest consulting an attorney
+who specialies in intellectual property law.</p>
+</blockquote>
+
+<p>Legal advice from the FSF:</p>
+
+<blockquote>
+<p>Works of the US may be considered public domain
+(IIRC, they are technically uncopyrightable), but the fact that
+it&#8217;s a work of the US should ideally be checked, and a note added
+in the files in question.</p>
+</blockquote>
+
+<blockquote>
+<p>If the translation is made with a grain of creativity,
+its authors may hold copyright on it independently,
+therefore their separate permission is needed for the work to be free.</p>
+</blockquote>
+
+<blockquote>
+<p>&#8220;Work of the US&#8221; means that it is legally a work of the state.</p>
+</blockquote>
+
+<p>has lead to a <a href="https://github.com/jafingerhut/lpc10">new release</a> with
+an explicit copyright notice on all C source files under
+the BSD 3-clause new or revised license.</p>
+
+<h2 id="libgsm">libgsm</h2>
+
+<p><a href="https://kojipkgs.fedoraproject.org//packages/sox/14.4.2.0/38.fc40/src/sox-14.4.2.0-38.fc40.src.rpm">Redhat&#8217;s source rpm for sox</a>
+contains a modified version of sox-14.4.2 which adds a missing copyright
+statement for libgsm that was removed when the library was imported into SoX.</p>
+
+<h2 id="optionallibraries">Optional libraries</h2>
+
+<p>SoX&#8217;s <code>COPYING</code> file says:</p>
+
+<pre><code>Note that some of the external packages that can be linked into libsox
+are GPLed and/or may have licensing problems, so they can be disabled
+at configure time with the relevant--with-* options. If libsox is built
+with such libraries, it must be distributed under the GPL.
+</code></pre>
+
+<p>and an FSF representative writes:</p>
+
+<blockquote>
+<p>You&#8217;ll have to check what the real licenses are, and update INSTALL
+(or SoX programs if they turn out GPL-incompatible).
+For example, &#8216;GPL&#8217; may mean GPLv2-only, making it non-compliant
+with Savannah hosting requirements (GPLv3 or later).</p>
+</blockquote>
+
+<h3 id="theexternallibraries">The external libraries</h3>
+
+<p><code>INSTALL</code> says that the optional libraries it can use, and their licences, are:</p>
+
+<pre><code>OpencoreAMR-NB/WB http://sourceforge.net/projects/opencore-amr    Apache v2.0
+VisualOn AMR-WB     http://sourceforge.net/projects/opencore-amr    Apache v2.0
+AO                                http://xiph.org/ao                                        GPL v2 or later
+FLAC                            http://flac.sourceforge.net                     GPL v2 or later, LGPL v2.1 or later and Xiph licence
+LADSPA                        http://www.ladspa.org                                 LGPL v2.1 or later
+Lame MP3 encoder    http://lame.sourceforge.net                     LGPL v2 or later; some source files include no copyright notice
+Twolame MP2 enc.    http://www.twolame.org                                LGPL v2.1 or later
+libltdl                     http://www.gnu.org/software/libtool     LGPL v2 or later
+MAD MP3 decoder     http://www.underbit.com/products/mad    GPL v2 or later
+MP3 ID3 tags            http://www.underbit.com/products/mad    GPL v2 or later
+Magic                         http://www.darwinsys.com/file                 (Two clause BSD)
+Ogg Vorbis                http://www.vorbis.com                                 (Xiph)
+Opus                            http://www.opus-codec.org/                        (Two clause BSD)
+PNG                             http://www.libpng.org/pub/png                 (zlib)
+Sndfile                     http://www.mega-nerd.com/libsndfile     LGPL v2.1 or later
+WavPack                     http://www.wavpack.com                                (WavPack)
+</code></pre>
+
+<h3 id="thelicences">The licences</h3>
+
+<h4 id="apachev2.0https:sourceforge.netpopencore-amrcodecimastertreelicense"><a href="https://sourceforge.net/p/opencore-amr/code/ci/master/tree/LICENSE">Apache v2.0</a></h4>
+
+<p>An FSF lawyer writes:</p>
+
+<blockquote>
+<p><a href="https://sourceforge.net/p/opencore-amr/code/ci/master/tree/LICENSE">Apache License Version 2.0 is compatible with GPLv3</a></p>
+</blockquote>
+
+<h4 id="twoclausebsd">Two clause BSD</h4>
+
+<pre><code>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+- Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+</code></pre>
+
+<h4 id="xiph">Xiph</h4>
+
+<pre><code>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+- Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+- Neither the name of the Xiph.org Foundation nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+</code></pre>
+
+<h4 id="wavpack">WavPack</h4>
+
+<pre><code>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+        * Redistributions of source code must retain the above copyright notice,
+            this list of conditions and the following disclaimer.
+        * Redistributions in binary form must reproduce the above copyright notice,
+            this list of conditions and the following disclaimer in the
+            documentation and/or other materials provided with the distribution.
+        * Neither the name of Conifer Software nor the names of its contributors
+            may be used to endorse or promote products derived from this software
+            without specific prior written permission.
+</code></pre>
+
+<h4 id="zlib">zlib</h4>
+
+<pre><code>Permission is hereby granted to use, copy, modify, and distribute
+this software, or portions hereof, for any purpose, without fee,
+subject to the following restrictions:
+
+ 1. The origin of this software must not be misrepresented; you
+        must not claim that you wrote the original software.    If you
+        use this software in a product, an acknowledgment in the product
+        documentation would be appreciated, but is not required.
+
+ 2. Altered source versions must be plainly marked as such, and must
+        not be misrepresented as being the original software.
+
+ 3. This Copyright notice may not be removed or altered from any
+        source or altered source distribution.
+</code></pre>
+
+<h2 id="analysis">Analysis</h2>
+
+<ul>
+<li><code>opus.c</code> is based on <code>oggenc.c</code> which is GPLv2</li>
+<li>The uncopyrighted files have been copyrighted either by contacting theis
+suthors or th the person who first comitted them.</li>
+<li>Of the 6 copyrighted with no explicit license
+
+<ul>
+<li>3 are copyright Chris Bagwell and defer to the blanket copyright statement</li>
+<li>3 are copyright Fabien Coelho who writes on 2024&#8211;6&#8211;16:
+
+<blockquote>
+I hereby grant permission to use my code that is included in SoX for any purpose
+</blockquote></li>
+</ul></li>
+<li>lpc10 has been upgraded to the new release, which is BSD 3-clause,</li>
+<li>libgsm has got its missing copyright statement back,</li>
+<li>The optional libraries' licenses are all compatible with the GPL</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<ul>
+<li>#51 Make <code>opus.c</code> GPL2</li>
+<li>#53 Double copyright statements</li>
+<li>#54 Uncopyrighted files</li>
+<li>#55 Copyrighted with no explicit licence</li>
+<li>#45 Upgrade lpc10</li>
+<li>#43 Replace libgsm&#8217;s licence</li>
+</ul>
+<hr>Generated by <tt>makehtml.sh</tt> on Sat Sep 14 08:24:28 PM CEST 2024</body>

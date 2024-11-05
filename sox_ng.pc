@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SoX
+Description: Audio file format and effects library
+Version: 14.4.3.1
+URL: https://codeberg.org/sox_ng
+Libs: -L${libdir} -lsox_ng
+Libs.private: 
+Cflags: -I${includedir}

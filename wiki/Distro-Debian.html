@@ -1,0 +1,82 @@
+<html><head><title>Distro-Debian - sox_ng wiki</title></head>
+<body><p align=center>sox_ng wiki - Distro-Debian</p>
+<hr>
+<h1 id="distrodebian">Distro Debian</h1>
+
+<p>Of the tested versions of SoX, Debian&#8217;s is the one that defends best
+against CVEs, though the strategy of importing <code>sox.sf.net</code>&#8217;s patches
+for them is less than 100% successful.</p>
+
+<h2 id="testresultsforcvepatchesin14.4.2git20190427-3.5and-4">Test results for CVE patches in 14.4.2+git20190427&#8211;3.5 and -4</h2>
+
+<pre><code>Legend
+SUCC    Exits zero when it should fail
+ABRT    Aborts
+ASAN    Works but the Address Sanitizer reports problems
+ALOOP Loops forever when compiled with the Address Sanitizer.
+            If you give it more than a minute of CPU time, the address sanitizer kills it
+            saying it has tried to allocate more than `0xc0000000` bytes of VM so the 10x
+            ASAN slowdown is due to SoX beating `malloc()` to death.
+1         Exits 1 without ASAN, &quot;succeeds&quot; with.
+-         We don't have a test for this bug
+</code></pre>
+
+<p>Results for Debian bookwork/trixie i386
+| Patch | Issue | bookworm32 | trixie32 | bookworm64 | trixie64 |
+| :&#8212;- | :&#8212;- | :&#8212;: | :&#8212;: | :&#8212;: | :&#8212;: |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0001-fix-build.patch">0001-fix-build</a> | #35 | - | - | - | - |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0002-spelling.patch">0002-spelling</a> | #36 | - | - | - | - |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0003-CVE-2017-15371.patch">0003-CVE-2017&#8211;15371</a> | #11 | ASAN | ASAN | ASAN | ASAN |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0004-CVE-2017-11358.patch">0004-CVE-2017&#8211;11358</a> | #8 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0005-CVE-2017-15370.patch">0005-CVE-2017&#8211;15370</a> | #16 | SUCC | SUCC | SUCC | SUCC |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0006-CVE-2017-11332.patch">0006-CVE-2017&#8211;11332</a> | #7 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0007-CVE-2017-11359.patch">0007-CVE-2017&#8211;11359</a> | #9 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0008-wavpack_check_errors.patch">0008-wavpack_check_errors</a> | #37 | OK | OK | 1 | 1 |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0009-lintian-man-sox.patch">0009-lintian-man-sox</a> |#38 | - | - | - | - |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0010-xa-validate-channel-count.patch">0010-xa-validate-channel-count</a> =CVE-2017&#8211;18189 | #14 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0011-CVE-2017-15372.patch">0011-CVE-2017&#8211;15372</a> | #12 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0012-CVE-2017-15642.patch">0012-CVE-2017&#8211;15642</a> | #13 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0013-Handle-vorbis_analysis_headerout-errors.patch">0013-Handle-vorbis_analysis_headerout-errors</a> =CVE-2017&#8211;11333 | #39 | ASAN | ASAN | ASAN | ASAN |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0014-CVE-2019-8354.patch">0014-CVE-2019&#8211;8354</a> | #15 | ABRT | ABRT | ABRT | ABRT |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0015-CVE-2019-8355.patch">0015-CVE-2019&#8211;8355</a> | #17 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0016-CVE-2019-8356.patch">0016-CVE-2019&#8211;8356</a> | #18 | SUCC<BR>ALOOP | SUCC<BR>ALOOP | SUCC<BR>ALOOP | SUCC<BR>ALOOP |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0017-CVE-2019-8357.patch">0017-CVE-2019&#8211;8357</a> | #19 | SEGV | SEGV | LOOP | LOOP |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0018-CVE-2019-13590.patch">0018-CVE-2019&#8211;13590</a> | #20 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0019-fix-resource-leak-comments.patch">0019-fix-resource-leak-comments</a> | #40 | - | - | - | - |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0020-fix-resource-leak-hcom.patch">0020-fix-resource-leak-hcom</a> | #41| - | - | - | - |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0021-fix-hcom-big-endian.patch">0021-fix-hcom-big-endian</a> | #42 | - | - | - | - |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0022-CVE-2021-3643.patch">0022-CVE-2021&#8211;3643</a> | #22 | ASAN | ASAN | ASAN | ASAN |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0023-CVE-2021-23159.patch">0023-CVE-2021&#8211;23159</a> | #24 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0024-CVE-2021-33844.patch">0024-CVE-2021&#8211;33844</a> | #26 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0025-CVE-2021-40426.patch">0025-CVE-2021&#8211;40426</a> | #27 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0026-CVE-2022-31650.patch">0026-CVE-2022&#8211;31650</a> | #28 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0027-CVE-2022-31651.patch">0027-CVE-2022&#8211;31651</a> | #29 | OK | OK | OK | OK |
+| <a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-4/0028-CVE-2023-32627-Filter-null-sampling-rate-in-VOC-code.patch">0028-CVE-2023&#8211;32627-Filter-null-sampling-rate-in-VOC-code</a> | #31 | SUCC | SUCC | SUCC | SUCC |</p>
+
+<p>For test results for other unaddressed CVEs and results for <code>sox.sf.net</code>
+and <code>sox_ng</code> see <a href="Testing.html">Testing</a>.</p>
+
+<h2 id="todo">TODO</h2>
+
+<h3 id="addformatopus">Add format OPUS</h3>
+
+<p>If <code>libopusfile-dev</code> is installed, <code>dpkg-buildpackage</code> says</p>
+
+<pre><code>dh_missing: warning: usr/lib/i386-linux-gnu/sox/libsox_fmt_opus.so exists in debian/tmp but is not installed to anywhere 
+</code></pre>
+
+<ul>
+<li><img src="patches/Debian-Add-opus-format.patch" alt="Patch for Debian source package 14.4.2+git20190427-4" /></li>
+</ul>
+
+<h3 id="addformatsndio">Add format sndio</h3>
+
+<p>If libsndio-dev is installed, <code>dpkg-buildpackage</code> says</p>
+
+<pre><code>dh_missing: warning: usr/lib/i386-linux-gnu/sox/libsox_fmt_sndio.so exists in debian/tmp but is not installed to anywhere
+</code></pre>
+
+<ul>
+<li><img src="patches/Debian-Add-sndio-format.patch" alt="Patch for Debian source package 14.4.2+git20190427-4" /></li>
+</ul>
+<hr>Generated by <tt>makehtml.sh</tt> on Sat Sep 14 08:24:28 PM CEST 2024</body>

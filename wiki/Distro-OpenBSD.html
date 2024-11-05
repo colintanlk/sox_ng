@@ -1,0 +1,231 @@
+<html><head><title>Distro-OpenBSD - sox_ng wiki</title></head>
+<body><p align=center>sox_ng wiki - Distro-OpenBSD</p>
+<hr>
+<h1 id="distroopenbsd">Distro OpenBSD</h1>
+
+<p><code>OpenBSD</code> bases its SoX on <code>sox.sf.net</code> commit <code>42b355</code> with 7 patches</p>
+
+<h2 id="patches">Patches</h2>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Patch </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <code>Update to latest commit (20210509) This fixes following CVEs:</code> </td>
+	<td style="text-align:center;"> - </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2019-13590</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2019-8357</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2019-8356</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2019-8355</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2019-8354</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2017-18189</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2017-15642</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2017-15372</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2017-15371</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2017-15370</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2017-11359</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2017-11358</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>CVE-2017-11332</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>fix man page</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>opus: bump consumers after update to 1.4</code> </td>
+	<td style="text-align:center;"> - </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>Update WWW to use HTTPS for sourceforge.net projects</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>pulseaudio: Update to 16.1</code> </td>
+	<td style="text-align:center;"> - </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>Move man to share/man</code> </td>
+	<td style="text-align:center;"> - </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>libid3tag: Bump PORTREVISION of dependent ports for shlib change</code> </td>
+	<td style="text-align:center;"> - </td>
+</tr>
+</tbody>
+</table>
+
+<p>In the post <a href="https://www.mail-archive.com/ports%40openbsd.org/msg107748.html">backport CVE fixes audio/sox</a>:</p>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Patch </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <code>mirror git checkout as a release tarball</code> </td>
+	<td style="text-align:center;"> - </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>bump library minor to 4.1 because of addition of symbols</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>remove iconv from WANTLIB and LIB_DEPENDS as reported by make port-lib-depends-check</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>rename CONFIGURE_ARGS</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>compile extras target during do-test</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <code>remove upstreamed patches</code> </td>
+	<td style="text-align:center;"> - </td>
+</tr>
+</tbody>
+</table>
+
+<p>And <code>sox_ng</code> already has a fix for:</p>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Patch </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <code>sndio: handle 24-bit samples properly on OpenBSD</code> </td>
+	<td style="text-align:center;"> #143 </td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="builddependencies">Build dependencies</h2>
+
+<h3 id="libao">libao</h3>
+
+<p><code>libao</code> fails top compile:</p>
+
+<pre><code>ao_sun.c:159:2: error: use of undeclared identifier 'audio_info_t'
+</code></pre>
+
+<p>and you can&#8217;t <code>configure --without-sunaudio</code></p>
+
+<h3 id="opus">opus</h3>
+
+<p>On cfarm220 (OpenBSD 7.5)
+you have to remove the first four lines of <code>Makefile.am&quot;,
+run</code>automake<code>and</code>configure &#8211;disable-dependency-tracking`</p>
+
+<p>It then dies saying</p>
+
+<pre><code>make: don't know how to make -msse4.1
+</code></pre>
+
+<h3 id="opusfile">opusfile</h3>
+
+<p>Fails because <code>libopus</code> is not installed:</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p><code>./configure --without-sunaudio</code> (see below) fails to find <code>libpng</code>
+although it is in <code>/usr/local</code> and <code>pkg-config --cflags libpng</code> says</p>
+
+<pre><code>-I/usr/local/include/libpng16
+</code></pre>
+
+<h2 id="compilation">Compilation</h2>
+
+<p>Compilation on cfarm220 (OpenBSD 7.5 amd64) fails:</p>
+
+<pre><code>sox_ng.c: error: use of undeclared identifier 'audio_info_t'
+
+sox_ng.c: error: use of undeclared identifier 'audio_info'
+            audio_info.play.gain = (vol2 * AUDIO_MAX_GAIN + 50) / 100;
+
+sox_ng.c:1326:37: error: use of undeclared identifier 'AUDIO_SETINFO'
+            if (vol1 != vol2 &amp;&amp; ioctl(fd, AUDIO_SETINFO, &amp;audio_info) &lt; 0)
+</code></pre>
+
+<p>but succeeds if you <code>./configure --without-sunaudio</code>. Issue #121.</p>
+
+<p><code>make</code> emits a lot of warnings like:</p>
+
+<pre><code>warning: incompatible function pointer types initializing 'sox_format_handler_seek' (aka 'int (*)(struct sox_format_t *, unsigned long)') with an expression of type 'int (sox_format_t *, uint64_t)' (aka 'int (struct sox_format_t *, unsigned long long)') [-Wincompatible-function-pointer-types]
+</code></pre>
+
+<h2 id="testing">Testing</h2>
+
+<p>Only the <code>spectrogram_-x</code> test fails because the <code>spectrogram</code> effect
+is not included due to <code>configure</code> not finding <code>libpng</code>.</p>
+<hr>Generated by <tt>makehtml.sh</tt> on Sat Sep 14 08:24:28 PM CEST 2024</body>

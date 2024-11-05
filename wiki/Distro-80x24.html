@@ -1,0 +1,194 @@
+<html><head><title>Distro-80x24 - sox_ng wiki</title></head>
+<body><p align=center>sox_ng wiki - Distro-80x24</p>
+<hr>
+<h1 id="distro80x24">Distro 80x24</h1>
+
+<p><a href="https://80x24.org/sox.git/"><code>80x24.org</code>&#8217;s SoX</a> is based on 5 commits
+after 14.4.2 with 27 commits and 17 branches.</p>
+
+<p>It is by far the most active and well-fed development of SoX
+and one of the few maintained by more than one person.
+Hats off!</p>
+
+<h2 id="commits">Commits</h2>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Commit </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/d41836d/s/">Fixes for issues found during 14.4.2 release</a> </td>
+	<td style="text-align:center;"> #99 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/cfc3ccc/s/">Read for more development</a> </td>
+	<td style="text-align:center;"> #98 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/e9189be/s/">Merge most Debian changes into master</a> </td>
+	<td style="text-align:center;"> #96 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/19bdf7e/s/">chmod&#8217;ing unneeded executable bit</a> </td>
+	<td style="text-align:center;"> #97 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/7e74b25/s/">Remove hepler script</a> </td>
+	<td style="text-align:center;"> #96 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/1c47376/s/">Use posix_fadvise to increase readahead</a> </td>
+	<td style="text-align:center;"> #100 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/62a370a/s/">Use non-blocking stdin for interactive mode</a> </td>
+	<td style="text-align:center;"> #101 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/a324a96/s/">Add average power spectrum for stat -freq -a</a> </td>
+	<td style="text-align:center;"> #102 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/cd1d109/s/">hcom: fix double free on writing zero-length file</a> </td>
+	<td style="text-align:center;"> #103 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/725ece0/s/">Add SOX_ENCODING_DSD</a> </td>
+	<td style="text-align:center;"> #44 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/eda010a/s/">Add DSF file support</a> </td>
+	<td style="text-align:center;"> #44 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/c03a859/s/">Add support for reading DSDIFF files</a> </td>
+	<td style="text-align:center;"> #44 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/e2c146d/s/">Add macros for increasing data alignment</a><br><em>Only used in one place in one file of the dop/dsf code. Inline it.</em> </td>
+	<td style="text-align:center;"> #44 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/3abe8af/s/">Add a sigma-delta modulator for DSD encoding</a> </td>
+	<td style="text-align:center;"> #44 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/807d49a/s/">Add DSD over PCM (dop) effect</a> </td>
+	<td style="text-align:center;"> #44 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/3a859be/s/">Speed up &#8220;|program&#8221; inputs on Linux 2.6.35+</a> </td>
+	<td style="text-align:center;"> #105 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/3896ff0/s/">dsf, dsdiff: fix 32-bit build</a> </td>
+	<td style="text-align:center;"> #44 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/58b5ad7/s/">Make id3 parsing available to all format handlers</a> </td>
+	<td style="text-align:center;"> #104 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/12fb271/s/">dsf: parse id3 tag if present</a> </td>
+	<td style="text-align:center;"> #44 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/0638fb3/s/">dop: fix handling of non-multiple of 16 sample count</a> </td>
+	<td style="text-align:center;"> #44 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/f40c5c0/s/">pad: add ability to align output to a multiple of a length</a> </td>
+	<td style="text-align:center;"> #106 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/92f14ab/s/">pad: fix alignment to non-power-of-two number of samples</a> </td>
+	<td style="text-align:center;"> #107 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/83b8435/s/">msvc: fix build with Visual Studio 2015</a> </td>
+	<td style="text-align:center;"> #108 </td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="branches">Branches</h2>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Branch </th>
+	<th style="text-align:left;"> Description </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/f5f7a3f32ac2d03fde04ac7433514666dd4e0700/s/"><code>for-mans_20200731</code></a> </td>
+	<td style="text-align:left;"> Add average power spectrum for stat -freq -a </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/c9a48c055398f171128573bbeab4e4de4c761058/s/"><code>pu</code></a> </td>
+	<td style="text-align:left;"> xa: validate channel count </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/61d92d7e2675eaa6351c8bf283828c87350fb532/s/"><code>pu-20171107</code></a> </td>
+	<td style="text-align:left;"> adpcm: fix stack overflow (CVE-2017&#8211;15372) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/063add6a04e08e4af98e494bb9ecbd4d570f74c5/s/"><code>pu-20171106</code></a> </td>
+	<td style="text-align:left;"> adpcm: fix stack overflow (CVE-2017&#8211;15372) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/ea4f3fb3c6de93e10786fbfc1cb1bdf9006bbcdb/s/"><code>js/sndio</code></a> </td>
+	<td style="text-align:left;"> Handle 24-bit samples properly on OpenBSD </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/b448ffc111be3d507769b51914c74d99948012b9/s/"><code>kc/pdf</code></a> </td>
+	<td style="text-align:left;"> Fix Bug #261: absurd docs bug - PDF is doubled </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/b4097a995ca152f3059faa1dd05f684ac0217737/s/"><code>ew/dyn-default-fix</code></a> </td>
+	<td style="text-align:left;"> Fix build with &#8211;with-dyn-default </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/b2562ba1db1a96ae4a04f92365b9ce97279650dd/s/"><code>ew/spectrogram-segv</code></a> </td>
+	<td style="text-align:left;"> Fix segfault when requested size exceeds length </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/9a34cffbf006d1110581c7e160826f3f1089a136/s/"><code>mg/spectrogram</code></a> </td>
+	<td style="text-align:left;"> Add FFTW3 support </td>
+	<td style="text-align:center;"> #109 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git/9301021b244befeb7e5a1ce4aaeabf84b4d9c6e6/s/"><code>ew/align</code></a> </td>
+	<td style="text-align:left;"> Always support aligned heap allocation </td>
+	<td style="text-align:center;"> #110 </td>
+</tr>
+</tbody>
+</table>
+<hr>Generated by <tt>makehtml.sh</tt> on Sat Sep 14 08:24:28 PM CEST 2024</body>

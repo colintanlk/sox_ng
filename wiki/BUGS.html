@@ -1,0 +1,1236 @@
+<html><head><title>BUGS - sox_ng wiki</title></head>
+<body><p align=center>sox_ng wiki - BUGS</p>
+<hr>
+<h1 id="bugs">BUGS</h1>
+
+<p><em>The more you look, the more you see.</em></p>
+
+<p>Bugs in <code>sox-14.4.2</code> are first bulk-listed here as one-liners and then
+migrate to the <a href="/sox_ng/sox_ng/issues">issues</a>.</p>
+
+<h2 id="alreadyissued">Already issued</h2>
+
+<ul>
+<li>Fixes for the CVEs (all resolved)</li>
+<li>Patches in
+<a href="Distro-Debian.html">Debian</a>,
+<a href="Distro-Gentoo.html">Gentoo</a>,
+<a href="Distro-Fedora.html">Fedora</a>,
+<a href="Distro-80x24.html">80x24</a>,
+<a href="Distro-Alpine.html">Alpine</a>,
+<a href="Distro-ALT.html">ALT Linux</a>,
+<a href="Distro-ArchLinux.html">ArchLinux</a>,
+<a href="Distro-Artix.html">Artix</a>,
+<a href="Distro-buildroot.html">buildroot</a>,
+<a href="Distro-CentOS.html">CentOS</a>,
+<a href="Distro-CRUX.html">CRUX</a>,
+<a href="Distro-cygwin.html">cygwin</a>,
+<a href="Distro-OpenEmbedded.html">OpenEmbedded</a></li>
+</ul>
+
+<h2 id="tobeissued">To be issued</h2>
+
+<h3 id="patchesfromotherdistros">Patches from other distros</h3>
+
+<p>See <a href="Distros.html">Distros</a>.</p>
+
+<h3 id="bugsonsox.sf.nethttps:sourceforge.netpsoxbugslimit100createdsince14.4.2"><a href="https://sourceforge.net/p/sox/bugs/?limit=100">Bugs on <code>sox.sf.net</code></a> created since 14.4.2</h3>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> BUG </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/377">377</a> silence -l does not work correctly </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/375">375</a> &#8216;pipe&#8217; STDIN input broken </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/374">374</a> autoreconf overwrites INSTALL </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/373">373</a> .VOC text not processed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/372">372</a> threshold parameter for &#8220;silence&#8221; filter isn&#8217;t handled correctly. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/371">371</a> Need a way to specify the directory for temporary files. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/370">370</a> FPE in SoX 14.4.3git (src/​aiff.c:622:58 in lsx_aiffstartwrite) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/369">369</a> FPE in SoX 14.4.3git（src/​voc.c:334:18 in read_samples) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/368">368</a> heap-buffer-overflow in SoX 14.4.3git（src/​hcom.c:160:41 in startread） </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/367">367</a> heap-buffer-overflow in SoX 14.4.3git（src/​formats_i.c:98:16） </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/366">366</a> html and pdf generation is broken </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/365">365</a> sox: Soory, there is no default audio device configured </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/364">364</a> sox spectrogram title option breaks when using keyword </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/363">363</a> sox segfaults when parsing CLI options </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/362">362</a> CVE-2021&#8211;40426 sphere.c start_read() heap-based buffer overflow vulnerability </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/361">361</a> sox not fading as expected </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/360">360</a> [BUG] two bugs in sox </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/359">359</a> DAT text file format broken on large number channel data files. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/358">358</a> Segmentation fault when creating a spectrogram with 3kHz limit </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/356">356</a> SoX handles 32bit float files with volume over 0 dBFS incorrectly </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/355">355</a> File Length Error for specific combination of reverb and tremolo </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/354">354</a> Device enumeration duplicates -&gt;Coreaudio.c needs updating to modern APIs </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/352">352</a> heap-overflow in formats_i.c </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/351">351</a> div zero in voc.c </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/350">350</a> Heap overflow in hcom.c </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/349">349</a> div zero crash in wav.c </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/346">346</a> sox noisered dies with segv </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/345">345</a> Sox should preserve all aiff headers </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/343">343</a> speed effect not effective using soxlib APIs </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/329">329</a> Outputting ogg/​vorbis via the output effect is extremely slow </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/323">323</a> devided by zero issue </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/322">322</a> sox FAIL noisered: multi-channel effect drained asymmetrically! error </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/314">314</a> Incorrect work of sox_read function with In-memory output buffers </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/313">313</a> libsox.dylib generated incorrectly on OS X 10.10 and later (pending-fixed) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/309">309</a> Preventing division by zero in src/​ao.c </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/307">307</a> Filename with Special Characters fail </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/304">304</a> Incorrect ByteRate and Non-Integer SampleRates </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/295">295</a> clipping warning even with guard </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/293">293</a> stats effect returns -inf if window is set to 0.36 seconds </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/276">276</a> &#8216;gain -n&#8217; causes SoX v14.4.2 to not delete tmp file </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/274">274</a> Codec bug in IMA and OKI ADPCM algorithms. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/263">263</a> FAIL sox: Sorry, there is no default audio device configured </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/262">262</a> Double free when applying a LADSPA plugin with 2 input channels and 3 output channels </td>
+	<td style="text-align:center;"> </td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="closedbugsonsox.sf.nethttps:sourceforge.netpsoxbugssearchqstatus3aclosed-invalidorstatus3aclosed-acceptedorstatus3aclosed-rejectedorstatus3aclosed-out-of-dateorstatus3aclosed-duplicateorstatus3aclosed-works-for-meorstatus3aclosedorstatus3aclosed-wont-fixorstatus3aclosed-fixedlimit250createdsince14.4.2"><a href="https://sourceforge.net/p/sox/bugs/search/?q=status%3Aclosed-invalid+or+status%3Aclosed-accepted+or+status%3Aclosed-rejected+or+status%3Aclosed-out-of-date+or+status%3Aclosed-duplicate+or+status%3Aclosed-works-for-me+or+status%3Aclosed+or+status%3Aclosed-wont-fix+or+status%3Aclosed-fixed&amp;limit=250">Closed bugs on <code>sox.sf.net</code></a> created since 14.4.2</h3>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> BUG </th>
+	<th style="text-align:left;"> Status </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/376">376</a> mailing lists not working </td>
+	<td style="text-align:left;"> closed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/353">353</a> Recording 24/​32 bits audio not in proper wave format </td>
+	<td style="text-align:left;"> closed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/348">348</a> syntax error near unexpected token `-fstack-protector-strong' </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/347">347</a> error metadata.cpp, Line 636 Expression: is_valid() </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/344">344</a> invalid option &#8220;-w&#8221; error </td>
+	<td style="text-align:left;"> closed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/342">342</a> sox has exited with error code 2 with Google Speech API </td>
+	<td style="text-align:left;"> closed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/341">341</a> help text hides option parsing error message </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/340">340</a> Documentation mismatch for -A /​ -U </td>
+	<td style="text-align:left;"> closed-out-of-date </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/339">339</a> trim nr samples different behavior from nr seconds </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/338">338</a> Spectrogram of very BIG file </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/337">337</a> Output wav file &gt;4gb corrupted from Sox remix of 3 wav files nto one wav file </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/336">336</a> Regression from 14.3.2 to 14.4.0 around stdin </td>
+	<td style="text-align:left;"> closed-out-of-date </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/335">335</a> malformed SDS </td>
+	<td style="text-align:left;"> closed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/334">334</a> Segmentation fault in rate.c:504:30 </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/333">333</a> Assertion fail in rate.c:303 </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/332">332</a> configure fails: syntax error near unexpected token `-Wl,&#8211;as-needed' </td>
+	<td style="text-align:left;"> closed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/331">331</a> A Floating point exception in wav.c:950:80 </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/330">330</a> Playing file through SoX </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/328">328</a> Error code 2 with Google Speech API on EC2 instance </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/327">327</a> Memcpy-param-overlap in mp3-util.h </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/326">326</a> sox_sample_test.h needs math.h for fabs() </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/325">325</a> Integer Overflow in sox-fmt.c </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/324">324</a> Fix broken URLs in man page </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/321">321</a> Stack-Buffer-Overflow in fft4g.c </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/320">320</a> Integer Overflow in xmalloc.h </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/319">319</a> Integer Overflow resulting in Heap-Buffer-Overflow in effect_i_dsp.c </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/318">318</a> NULL pointer dereference in effect_i_dsp.c </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/317">317</a> sox cannot handle true 32 bit </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/316">316</a> sox command </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/315">315</a> Converting the same wav file twice throws different output </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/312">312</a> Null byte at the end of gsrt files causes a click in playback </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/311">311</a> Unexpected display behavior when less than 80 columns </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/310">310</a> Parsing 0-frame aiff file fails with error: Missing SSND chunk in AIFF file </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/308">308</a> [PATCH] assertion failed (core dumped) while converting wav to hcom on 64 bit big endian machine </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/306">306</a> Version info not displayed </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/305">305</a> Sox blocking in an infinite loop when decoding AMR files </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/303">303</a> Sox/​play WAV playing in double speed </td>
+	<td style="text-align:left;"> closed-duplicate </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/302">302</a> Missing $(DESTDIR) before ${bindir} in src/​Makefile.am installcheck </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/301">301</a> Bad FSF address in src/​ladspa.h </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/300">300</a> sox v14.4.2 segmentation violation when playing some wav files generated by Audacity </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/299">299</a> Invalid memory read via crafted .xa file </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/298">298</a> Use-after-free while feeding malformed aiff file </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/297">297</a> SoX v14.4.2 vulnerable to a heap use-after-free condition after parsing AIFF file and calling sox_append_comments() </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/296">296</a> CVE-2017&#8211;11332, CVE-2017&#8211;11332, CVE-2017&#8211;11359 </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/294">294</a> Wrong conversion from 8 bit to 16 bit </td>
+	<td style="text-align:left;"> closed-rejected </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/292">292</a> Precision of 32-bit float appears incorrect </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/291">291</a> Support ID3 tags version 2.4 </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/290">290</a> sox_open_mem_write() on windows not worked </td>
+	<td style="text-align:left;"> closed-wont-fix </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/286">286</a> Skipped AIFF chunks fail to account for pad byte. </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/285">285</a> pipe decoded audio from ffmpeg to sox </td>
+	<td style="text-align:left;"> closed-wont-fix </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/284">284</a> Please update LibFlac.vcxproj to work with flac 1.3 </td>
+	<td style="text-align:left;"> closed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/283">283</a> Z_SOLO macro in LibZLib.vcxproj </td>
+	<td style="text-align:left;"> closed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/282">282</a> Compiler error C2039 in VS 2015 </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/281">281</a> repeat not working in a chain of effects </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/278">278</a> Infinite loop, info command and verbose output for corrupt WAV file </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/277">277</a> pulseaudio sound handler is buggy/​inconsistent </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/275">275</a> Different output length from trim if source is AIFF file </td>
+	<td style="text-align:left;"> closed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/273">273</a> stdin/​stdout not released when lsx_close called </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/272">272</a> sox_formats_quit does not properly clean things up </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/271">271</a> Can&#8217;t open files which contains foreign characters </td>
+	<td style="text-align:left;"> closed-duplicate </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/270">270</a> Current git fails to build debian package on Debian and Ubuntu </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/269">269</a> sox play fails following Ubuntu 14.04 upgrade (3.13.0&#8211;65-generic) </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/268">268</a> Permission denied </td>
+	<td style="text-align:left;"> closed-invalid </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/267">267</a> &#8220;Bit-depth&#8221; stats result changes when signal is inverted </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/266">266</a> sox-14.4.2/​src/​mp3.c:407: undefined reference to `lsx_error' </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/265">265</a> Multiple memory corruption vulnerabilities in SoX 14.4.2 </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/264">264</a> sox is losing frames when trimming </td>
+	<td style="text-align:left;"> closed-out-of-date </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/261">261</a> absurd docs bug - PDF is doubled 14.4.1 and 14.4.2 </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/bugs/260">260</a> Reading from memory files depends upon uninitialized value read </td>
+	<td style="text-align:left;"> closed-fixed </td>
+	<td style="text-align:center;"> </td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="patchesonsox.sf.nethttps:sourceforge.netpsoxbugslimit100"><a href="https://sourceforge.net/p/sox/bugs/?limit=100">Patches on <code>sox.sf.net</code></a></h3>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Patch </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/129">129</a> a sane build system </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/128">128</a> Division by zero at <code>wav.c:967</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/127">127</a> Division by zero at <code>voc.c:334</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/126">126</a> Global-buffer-overflow at <code>adpcms.c:58</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/125">125</a> Fix <code>property_size = sizeof(name)</code> </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/124">124</a> low-latency pulseaudio pipeline using &#8211;input-buffer </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/123">123</a> configure.ac: fix static linking with id3tag </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/122">122</a> configure.ac: put back &#8211;disable-protector </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/121">121</a> Full RF64 support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/120">120</a> Initialize channel map for pulseaudio </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/116">116</a> [PATCH] Adding FFTW support speeds up spectrogram by factor of ten </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/108">108</a> Fix multi-channel LADSPA effects + draining for all LADSPA effects </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/107">107</a> Win32 Progress Flush Fix </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/106">106</a> Support for &#8220;DynAudNorm&#8221; Effect </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/105">105</a> Win32 Unicode (UTF-8) support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/104">104</a> missing version number in sox &#8211;version output </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/103">103</a> ignore SIGPIPE so stop callbacks may fire </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/102">102</a> [PATCH] modified spectrogram hh:mm:ss in X-axis </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/94">94</a> libmpg123 support for mp3 decoding </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/93">93</a> flac (decoder): simplify EOF state and fix MD5 check </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/89">89</a> Docs: libsox.3 update </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/65">65</a> Enable SoX to be built as a Windows DLL </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/41">41</a> MIDI Sample Dump Module </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/patches/35">35</a> Amiga Module support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="featurerequestsonsox.sf.nethttps:sourceforge.netpsoxbugslimit100"><a href="https://sourceforge.net/p/sox/bugs/?limit=100">Feature requests on <code>sox.sf.net</code></a></h3>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Feature </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/236">236</a> Citation form </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/235">235</a> Respect LD_LIBRARY_PATH for handler loading </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/234">234</a> Can Normalization Be Dom Independently For Each Channel </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/233">233</a> macos: curl not wget </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/232">232</a> Audio libraries </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/231">231</a> OptimFROG (ofr) Support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/230">230</a> Support overlapping fade effect </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/229">229</a> Monkeys Audio (APE) Support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/228">228</a> Remix: Arbitrary select channels from each input file </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/227">227</a> The length of output data is not reported for sox_open_mem_write() </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/226">226</a> eekable support in sox_open_memstream_write() and sox_open_mem_write() </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/225">225</a> Spectrogram - Log/​MEL/​Bark frequency scaling options </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/224">224</a> Support arbitrary bits number. (ie: -b 20 ) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/223">223</a> Get in-file loop information </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/221">221</a> Implement DSF support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/220">220</a> GUI Frontend </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/219">219</a> SAPI event data (EVNT chunk) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/216">216</a> Equalizer and Convolution (FIR) of stereo files. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/215">215</a> rate with multiply/​divide of sampling rate </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/214">214</a> Comment in spectrogram not supporting non-ASCII </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/213">213</a> Add mp3 support by default as it became patent free on 16 April 2017 </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/212">212</a> Convolver </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/211">211</a> use passband and move in frequency </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/210">210</a> Add .xtr audio file format </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/208">208</a> export phase info as png via spectrogram </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/207">207</a> spectogram to svg </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/206">206</a> Add codec2 for low bitrate voice as a replacement for LPC-10. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/205">205</a> Feature request - default audio device </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/204">204</a> sox.html </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/203">203</a> Support for M4A? </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/202">202</a> Support &#8220;pcm&#8221; format of the game &#8220;Dracula X&#8221; (sega saturn) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/201">201</a> Add sound meter features </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/200">200</a> adp format request for conversion </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/199">199</a> simpler standalone binary please </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/198">198</a> fixed normalization </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/197">197</a> SetRecordingDurationBySox </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/196">196</a> fade based on previous and next file in concatenation of audio files </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/195">195</a> Display audio properties and spectrogram settings in spectrograms </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/194">194</a> Enable AMR-WB encoding support in SoX </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/193">193</a> Spectrum of Frequencies into dat file </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/192">192</a> Opus File Encoding Support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/190">190</a> Save spectrograms as text file </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/189">189</a> Reading Support (or more) for DTS-HD </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/188">188</a> new release with opus file reading support? </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/187">187</a> Square (U parabola) fade </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/183">183</a> soxi to JSON </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/181">181</a> Can´t read Large Wave files (No Header) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/180">180</a> Higher Precision with Speed. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/179">179</a> append to tags </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/178">178</a> Waveform Display for SoX </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/177">177</a> WavPack ReplayGain support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/176">176</a> Log Frequency Scale for Spectrogram </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/175">175</a> Use pkg-config for all library detection </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/174">174</a> Sidechain functionality for compand/​mcompand effects </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/173">173</a> dsd to pcm support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/172">172</a> logarithmic fade only spans across half the fade-out-length </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/170">170</a> alpha channel for spectrograms </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/168">168</a> wish: raw, realtime spectrogram data (graphical equaliser) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/167">167</a> Statistics: EBU R128 specifications </td>
+	<td style="text-align:center;"> #151 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/166">166</a> SoX for WinCE </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/165">165</a> Better directory support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/164">164</a> play: interactive selection of output channels </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/163">163</a> Apply effects to specific channels only </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/162">162</a> Plot combined response of cascaded filters </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/161">161</a> time stretch with DIRAC alg. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/156">156</a> v4.13 Fake temporary files in Windows </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/154">154</a> ima-adpcm in RAW </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/153">153</a> New feature: using a profile for highpass/​lowpass filter </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/150">150</a> Tape wow and flutter correction </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/149">149</a> Request for Project Wiki </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/147">147</a> Deliver libsox.dll for win32 </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/146">146</a> Will G.723 (111) be added for wav files? </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/145">145</a> Request for different tunings in synth </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/144">144</a> Mac OS X binaries info </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/141">141</a> Stereo center removal (not oops) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/135">135</a> CAF with IMA4 support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/134">134</a> Monkey&#8217;s Audio decoding support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/129">129</a> Add sox_add_effect_with_auto() utility </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/128">128</a> Do not export lsx_ symbols in libsox </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/127">127</a> Allow inputs to have different rates while concat&#8217;ing </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/125">125</a> Split existing speech file on silence </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/124">124</a> Fade out should allow stop-time=&#8220;end of the file&#8221; with pipes </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/123">123</a> Support DDWAV files </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/122">122</a> Error handling .ACT wav files </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/121">121</a> soxrc </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/119">119</a> RMS Normlization </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/117">117</a> Format lists in &#8211;help text </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/113">113</a> dynamic SoX Effects </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/109">109</a> sox as vst plugin </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/108">108</a> OSS plugin should support 24 and 32 bit formats </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/103">103</a> Support .mpc </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/102">102</a> Support for .act </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/101">101</a> Support .ape </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/99">99</a> Replace or supplement use of wget with (lib)curl </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/96">96</a> Push file detection into libmagic and use that </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/95">95</a> Separate formats and CODECs </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/94">94</a> Make effects LV2 (LADSPA v2) plugins </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/93">93</a> Add portaudio support </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/92">92</a> Add re-encapsulation of lossy formats </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/91">91</a> silence coordinates </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/83">83</a> Move file formats into libsndfile </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/82">82</a> Add Octave filtering </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/79">79</a> Make &#8220;echo -s&#8221; an alias of echos </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/72">72</a> Improve WAV handler&#8217;s treatment of non-audio chunks </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/70">70</a> Make libst failure-resistant </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/69">69</a> Use word-alignment for WAV </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/64">64</a> Implement speex format (http:/​/​www.speex.org) </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/63">63</a> Add MP3 support to WAV handler </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/55">55</a> support replaygain tags </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/50">50</a> vocoder </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/32">32</a> Support .dss - Digital Speech Standard </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/25">25</a> Convert AKAI cdrom </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/17">17</a> Loop points not preserved </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://sourceforge.net/p/sox/feature-requests/9">9</a> Restore clipped peaks in a waveform? </td>
+	<td style="text-align:center;"> </td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="tobeaddedhere">To be added here</h2>
+
+<p>&#8230;or directly to the issues:</p>
+
+<h3 id="otherpatchesfromthedistrosdistros">Other patches from the <a href="Distros.html">Distros</a></h3>
+
+<p>Among which:
+* <a href="https://github.com/haikuports/haikuports/blob/master/media-sound/sox/sox-14.4.2.recipe">haiku</a> One patch for haiku
+* <a href="https://github.com/KaOSx/main/tree/master/sox">KaOS</a> one patch for ffmpeg0.11
+* <a href="https://ports.macports.org/port/sox/details">MacPorts</a> Two patches:
+* Fix build on Yosemite
+* add curl support
+* <a href="http://sophie.zarb.org/rpms/105748d9b69c7cca6fb7015e9d2337fa/files">Mageia</a> 7 CVE patches
+* <a href="https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-sox">MSYS2 mingw</a> One patch:
+* <code>ucrt-no-rewind-pipe</code>
+* <a href="https://gitee.com/src-openeuler/sox/tree/openEuler-23.09">OpenEuler</a> 12 patches
+* <a href="https://github.com/OpenIndiana/oi-userland/tree/7942b0829973c7a732d67ca3e0bb240679fac40e/components/multimedia/sox/patches">OpenIndiana</a> 3 patches:
+* <code>formats.c</code>: update to 14.4.2; drop 32 bit
+* <code>libsox.c</code>: avoid dependencies on encumbered packages
+* <code>disableencumbered</code>: update to 14.4.2; drop 32 bit
+* <a href="https://github.com/openwrt/packages/tree/master/sound/sox/patches">OpenWRT</a> 3 patches:
+* cross_compile
+* <code>fix_uclibc_build_issue</code>
+* <code>reproducible-builds</code>
+* <a href="http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/audio/sox/patches">pkgsrc</a>
+* <code>patch-src_oss.c</code>: Prevent a segfault when playing certain WAV files. From Onno van &#8230;
+* <code>patch-src_sox.c</code>: PR pkg/56800 hitting v or V during sox&#8217;s play command causes a segfault from On&#8230;
+* <code>patch-src_sunaudio.c</code>: PR pkg/56800 hitting v or V during sox&#8217;s play command causes a segfault from On&#8230;
+* <a href="https://git.pld-linux.org/?p=packages/sox.git;a=tree">PLD Linux</a> 3 patches:
+* sox-dyn
+* sox-link
+* sos-system-lpc10
+* <a href="https://bugzilla.redhat.com/buglist.cgi?component=sox">Redhat bug tracker</a>
+* <a href="https://launchpad.net/ubuntu/+source/sox/+bugs">Ubuntu bug tracker</a></p>
+
+<h3 id="theforks">The forks</h3>
+
+<p>See <a href="Forks.html">Forks</a>.</p>
+
+<h3 id="sox.sf.netcommitssince14.4.2">sox.sf.net commits since 14.4.2</h3>
+
+<ul>
+<li>The <a href="https://sourceforge.net/p/sox/code/commit_browser">182 commits</a>
+since 14.4.2 on <code>sox.sf.net</code> that have not already been added</li>
+</ul>
+
+<h3 id="other">Other</h3>
+
+<ul>
+<li><a href="https://public-inbox.org/sox-users/57c1e579.46d0620a.54ca2.c765@mx.google.com/t/">Cannot play/record under Windows</a> fails in 14.4.2, works in 14.4.1</li>
+<li><code>release.sh</code> is said not to work</li>
+</ul>
+<hr>Generated by <tt>makehtml.sh</tt> on Sat Sep 14 08:24:28 PM CEST 2024</body>

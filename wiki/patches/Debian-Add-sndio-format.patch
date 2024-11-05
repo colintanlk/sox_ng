@@ -1,0 +1,61 @@
+From a528f88e92d825320badb56d33aeb5c8e3a0516f Mon Sep 17 00:00:00 2001
+From: Martin Guy <martinwguy@gmail.com>
+Date: Mon, 15 Jul 2024 14:05:55 +0200
+Subject: [PATCH] Add sndio format
+
+New packages libsox-fmt-sndio and -dbgsym
+---
+ debian/control                  | 14 ++++++++++++++
+ debian/libsox-fmt-sndio.install |  1 +
+ 2 files changed, 15 insertions(+)
+ create mode 100644 debian/libsox-fmt-sndio.install
+
+diff --git a/debian/control b/debian/control
+index 7b2bf1e..23d2662 100644
+--- a/debian/control
++++ b/debian/control
+@@ -22,6 +22,7 @@ Build-Depends: debhelper-compat (= 12),
+                libpulse-dev,
+                libsamplerate0-dev,
+                libsndfile1-dev (>= 1.0.12),
++               libsndio-dev,
+                libtwolame-dev,
+                libvorbis-dev,
+                libwavpack-dev,
+@@ -171,6 +172,18 @@ Description: SoX PulseAudio format I/O library
+  .
+  PulseAudio: https://www.freedesktop.org/wiki/Software/PulseAudio/
+ 
++Package: libsox-fmt-sndio
++Architecture: any
++Multi-Arch: same
++Section: libs
++Depends: ${misc:Depends}, ${shlibs:Depends}
++Description: SoX sndio format I/O library
++ SoX is the swiss army knife of sound processing.
++ .
++ This package contains the SoX Sndio format I/O library.
++ .
++ Sndio: https://www.sndio.org
++
+ Package: libsox-fmt-all
+ Architecture: any
+ Multi-Arch: same
+@@ -182,6 +195,7 @@ Depends: libsox-fmt-alsa (= ${binary:Version}) [linux-any],
+          libsox-fmt-opus (= ${binary:Version}),
+          libsox-fmt-oss (= ${binary:Version}),
+          libsox-fmt-pulse (= ${binary:Version}),
++         libsox-fmt-sndio (= ${binary:Version}),
+          ${misc:Depends}
+ Description: All SoX format libraries
+  SoX is the swiss army knife of sound processing.
+diff --git a/debian/libsox-fmt-sndio.install b/debian/libsox-fmt-sndio.install
+new file mode 100644
+index 0000000..4c2a40a
+--- /dev/null
++++ b/debian/libsox-fmt-sndio.install
+@@ -0,0 +1 @@
++usr/lib/*/sox/libsox_fmt_sndio.so*
+-- 
+2.39.2
+

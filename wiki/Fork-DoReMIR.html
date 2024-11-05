@@ -1,0 +1,210 @@
+<html><head><title>Fork-DoReMIR - sox_ng wiki</title></head>
+<body><p align=center>sox_ng wiki - Fork-DoReMIR</p>
+<hr>
+<h1 id="forkdoremir">Fork DoReMIR</h1>
+
+<p><a href="http://www.doremir.com">DoReMIR Music Research</a>&#8217;s github fork is
+taken from <code>cbagwell/sox</code> and is 20 commits ahead
+and with three branches.</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><a href="https://github.com/doremir/sox">github.com/doremir/sox</a></li>
+</ul>
+
+<h2 id="commits">Commits</h2>
+
+<p>In the order they were applied:</p>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Commit </th>
+	<th style="text-align:left;"> Description </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/d05aba5"><code>d05aba5</code></a> </td>
+	<td style="text-align:left;"> Don&#8217;t call sox_write from output effect if input buffer is empty. This avoids issues with the vorbis encoder. </td>
+	<td style="text-align:center;"> #148 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/4e2c3ec"><code>4e2c3ec</code></a> </td>
+	<td style="text-align:left;"> Support for mp3 decoding using MPG123 instead of MAD </td>
+	<td style="text-align:center;"> #150 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/1338dfa"><code>1338dfa</code></a> </td>
+	<td style="text-align:left;"> Support for auto-detecting MP3 </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/ed00cb8"><code>ed00cb8</code></a> </td>
+	<td style="text-align:left;"> Bug fix in mp3 format handler </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/39db06c"><code>39db06c</code></a> </td>
+	<td style="text-align:left;"> Added README.md with build instructions for Windows. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/28c63e5"><code>28c63e5</code></a> </td>
+	<td style="text-align:left;"> Update README.md with build instructions. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/8f3da1b"><code>8f3da1b</code></a> </td>
+	<td style="text-align:left;"> Clear errors before reading so that it is possible to read from a file being written to by another process </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/4d753b0"><code>4d753b0</code></a> </td>
+	<td style="text-align:left;"> Use C style comments </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/6d8b03f"><code>6d8b03f</code></a> </td>
+	<td style="text-align:left;"> Export lsx_clearerr and lsx_flush </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/ceb951f"><code>ceb951f</code></a> </td>
+	<td style="text-align:left;"> Use _wfopen on Windows to support unicode filenames </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/9742ddf"><code>9742ddf</code></a> </td>
+	<td style="text-align:left;"> When reading partial samples from a file being written, save the partial samples for next read so that no data is lost </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/9a4f57f"><code>9a4f57f</code></a> </td>
+	<td style="text-align:left;"> Bug fix for the partial sample feature </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/8e133d2"><code>8e133d2</code></a> </td>
+	<td style="text-align:left;"> Update README.md with build instructions for Windows. </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/f785535"><code>f785535</code></a> </td>
+	<td style="text-align:left;"> Make sox_delete_effect usable and added sox_add_and_delete_effect for convenience </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/0c21d46"><code>0c21d46</code></a> </td>
+	<td style="text-align:left;"> sox_add_effect error handling fix </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/cddfb07"><code>cddfb07</code></a> </td>
+	<td style="text-align:left;"> Fixed some warnings and comments in mp3 handler </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/d4556e7"><code>d4556e7</code></a> </td>
+	<td style="text-align:left;"> Support unicode when writing id3 tags </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/252b73f"><code>252b73f</code></a> </td>
+	<td style="text-align:left;"> CMake support for ID3 writing with LAME </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/fc94e0f"><code>fc94e0f</code></a> </td>
+	<td style="text-align:left;"> Use sox_uint64_t in sox_mp3seek to avoid compiler warning </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/0af5834"><code>0af5834</code></a> </td>
+	<td style="text-align:left;"> README.md has moved to the modus repository </td>
+	<td style="text-align:center;"> </td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="branches">Branches</h2>
+
+<h3 id="bug-fix">bug-fix</h3>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Commit </th>
+	<th style="text-align:left;"> Description </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/d05aba5"><code>d05aba5</code></a> </td>
+	<td style="text-align:left;"> Don&#8217;t call sox_write from output effect if input buffer is empty </td>
+	<td style="text-align:center;"> - </td>
+</tr>
+</tbody>
+</table>
+
+<p>Included in the master branch</p>
+
+<h3 id="dot">dot</h3>
+
+<p>Branch copied from cbagwell/sox, 184 commits behind cbagwell&#8217;s master.</p>
+
+<h3 id="mpg123-support">mpg123-support</h3>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:center;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Commit </th>
+	<th style="text-align:left;"> Description </th>
+	<th style="text-align:center;"> Issue </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/1ab438c"><code>1ab438c</code></a> </td>
+	<td style="text-align:left;"> Support for mp3 decoding using MPG123 instead of MAD </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/c42f61c"><code>c42f61c</code></a> </td>
+	<td style="text-align:left;"> Support for auto-detecting MP3 </td>
+	<td style="text-align:center;"> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="https://github.com/doremir/sox/commit/a8e86e2"><code>a8e86e2</code></a> </td>
+	<td style="text-align:left;"> Bug fix in mp3 format handler </td>
+	<td style="text-align:center;"> </td>
+</tr>
+</tbody>
+</table>
+
+<p>Presumably the same as the three commits of the same names in the master branch.</p>
+<hr>Generated by <tt>makehtml.sh</tt> on Sat Sep 14 08:24:28 PM CEST 2024</body>

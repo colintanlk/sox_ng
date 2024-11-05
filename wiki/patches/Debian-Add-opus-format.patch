@@ -1,0 +1,62 @@
+From 4db2eb880806cf68edf8451a739b3978bb344703 Mon Sep 17 00:00:00 2001
+From: Martin Guy <martinwguy@gmail.com>
+Date: Mon, 15 Jul 2024 14:04:00 +0200
+Subject: [PATCH] Add Opus format
+
+New packages libsox-fmt-opus and -dbgsym
+---
+ debian/control                 | 19 +++++++++++++++++--
+ debian/libsox-fmt-opus.install |  1 +
+ 2 files changed, 18 insertions(+), 2 deletions(-)
+ create mode 100644 debian/libsox-fmt-opus.install
+
+diff --git a/debian/control b/debian/control
+index 3a122f1..7b2bf1e 100644
+--- a/debian/control
++++ b/debian/control
+@@ -17,6 +17,7 @@ Build-Depends: debhelper-compat (= 12),
+                libmp3lame-dev,
+                libopencore-amrnb-dev,
+                libopencore-amrwb-dev,
++               libopusfile-dev,
+                libpng-dev,
+                libpulse-dev,
+                libsamplerate0-dev,
+@@ -132,6 +133,19 @@ Description: SoX MP2 and MP3 format library
+  libmad: https://www.underbit.com/products/mad/
+  lame: https://lame.sourceforge.io
+ 
++Package: libsox-fmt-opus
++Architecture: any
++Multi-Arch: same
++Section: libs
++Depends: ${misc:Depends}, ${shlibs:Depends}
++Description: SoX Opus format library
++ SoX is the swiss army knife of sound processing.
++ .
++ This package contains the SoX Opus format library.
++ Read support by libopusfile, no write support.
++ .
++ libopus: https://www.opus-codec.org
++
+ Package: libsox-fmt-oss
+ Architecture: any
+ Multi-Arch: same
+@@ -165,6 +179,7 @@ Depends: libsox-fmt-alsa (= ${binary:Version}) [linux-any],
+          libsox-fmt-ao (= ${binary:Version}),
+          libsox-fmt-base (= ${binary:Version}),
+          libsox-fmt-mp3 (= ${binary:Version}),
++         libsox-fmt-opus (= ${binary:Version}),
+          libsox-fmt-oss (= ${binary:Version}),
+          libsox-fmt-pulse (= ${binary:Version}),
+          ${misc:Depends}
+diff --git a/debian/libsox-fmt-opus.install b/debian/libsox-fmt-opus.install
+new file mode 100644
+index 0000000..326a0af
+--- /dev/null
++++ b/debian/libsox-fmt-opus.install
+@@ -0,0 +1 @@
++usr/lib/*/sox/libsox_fmt_opus.so*
+-- 
+2.39.2
+

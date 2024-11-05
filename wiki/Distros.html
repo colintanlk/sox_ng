@@ -1,0 +1,429 @@
+<html><head><title>Distros - sox_ng wiki</title></head>
+<body><p align=center>sox_ng wiki - Distros</p>
+<hr>
+<h1 id="distros">Distros</h1>
+
+<p>About 50 non-derivative software distributions package <code>sox</code> either
+from 14.4.2 with different selections of patches or
+from commit 42b355 with a different array of patches.</p>
+
+<p>We add Debian derivative Ubuntu because it may have different patches
+and has a separate, well-nourished issue tracker.</p>
+
+<p>If there is a page of distro-specific notes, the link on the distro name
+in the following table will take you to it;
+distro-generic notes are after the table.</p>
+
+<h2 id="thedistros">The Distros</h2>
+
+<pre><code>Legend
+14.4.2    Last release of sox.sf.net from 2015-02-22
+42b355    Tip of the sox.sf.net repo on 2021-05-09
+</code></pre>
+
+<table border=1 cellspacing=0>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;"> Distro </th>
+	<th style="text-align:left;"> Pages </th>
+	<th style="text-align:left;"> Maintainers </th>
+	<th style="text-align:left;"> Notes </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-80x24.html">80x24</a> </td>
+	<td style="text-align:left;"> <a href="https://80x24.org/sox.git">Package</a> </td>
+	<td style="text-align:left;"> Eric Wong <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#x6e;&#111;&#114;&#109;&#x61;&#x6c;&#x70;&#x65;&#114;&#115;&#111;&#x6e;&#x40;&#x79;&#104;&#98;&#x74;&#46;&#x6e;&#101;&#x74;">&#x6e;&#x6f;&#114;&#x6d;&#x61;&#x6c;&#112;&#101;&#114;&#x73;&#x6f;&#x6e;&#x40;&#x79;&#104;&#98;&#116;&#46;&#x6e;&#x65;&#116;</a> and others </td>
+	<td style="text-align:left;"> 14.4.2 with many commits, patches and branches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-AIX.html">AIX</a> </td>
+	<td style="text-align:left;"> - </td>
+	<td style="text-align:left;"> - </td>
+	<td style="text-align:left;"> Doesn&#8217;t package SoX </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-Alpine.html">Alpine Linux</a> </td>
+	<td style="text-align:left;"> <a href="https://pkgs.alpinelinux.org/packages?name=sox">Packages</a><BR><a href="https://git.alpinelinux.org/aports/tree/community/sox">Patches</a> </td>
+	<td style="text-align:left;"> Natanael Copa </td>
+	<td style="text-align:left;"> 14.4.2 with 19 patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-ALTLinux.html">ALT Linux</a> </td>
+	<td style="text-align:left;"> <a href="https://packages.altlinux.org/en/sisyphus/srpms/sox">Package</a><BR><a href="https://packages.altlinux.org/en/sisyphus/srpms/sox/specfiles">Specfiles</a> </td>
+	<td style="text-align:left;"> ded (Andrey Kovalev) </td>
+	<td style="text-align:left;"> 14.4.2 with 26 patches: 19 CVEs &amp; 6 bug fixes from Debian and one build system fix </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-Arch.html">ArchLinux</a> </td>
+	<td style="text-align:left;"> <a href="https://archlinux.org/packages/extra/x86_64/sox">Package</a><BR><a href="https://gitlab.archlinux.org/archlinux/packaging/packages/sox">Patches</a> </td>
+	<td style="text-align:left;"> David Runge <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#x64;&#x76;&#122;&#114;&#118;&#x40;&#97;&#114;&#x63;&#104;&#108;&#105;&#x6e;&#x75;&#120;&#46;&#111;&#114;&#x67;">&#100;&#118;&#x7a;&#x72;&#118;&#64;&#97;&#114;&#x63;&#x68;&#x6c;&#105;&#x6e;&#x75;&#x78;&#46;&#x6f;&#114;&#x67;</a> </td>
+	<td style="text-align:left;"> 42b355 with 7 CVE fixes </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-Artix.html">Artix</a> </td>
+	<td style="text-align:left;"> <a href="https://packages.artixlinux.org/packages/world/x86_64/sox">Package</a> </td>
+	<td style="text-align:left;"> Last commits are by Nathan Owens ndowens@artixlinux.org </td>
+	<td style="text-align:left;"> 42b355 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-buildroot.html">buildroot</a> </td>
+	<td style="text-align:left;"> <a href="https://git.busybox.net/buildroot/tree/package/sox">Patches</a> </td>
+	<td style="text-align:left;"> Last patch is from fontaine.fabrice@gmail.com </td>
+	<td style="text-align:left;"> sox.sf.net commit 752416 (2021&#8211;02&#8211;01=42b355^) with 5 build system fixes </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-CentOS.html">CentOS</a> </td>
+	<td style="text-align:left;"> <a href="https://git.centos.org/rpms/sox">Package</a><BR><a href="https://git.centos.org/rpms/sox/blob/c7/f/SOURCES">Patches</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> 14.4.1 with three patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-CRUX.html">CRUX</a> </td>
+	<td style="text-align:left;"> <a href="https://crux.nu/ports/crux-3.6/contrib/sox">Package</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> 42b355 with one build system fix </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-cygwin.html">cygwin</a> </td>
+	<td style="text-align:left;"> <a href="https://cygwin.com/packages/summary/sox-src.html">Package</a><BR><a href="https://cygwin.com/cgit/cygwin-packages/sox">Commits</a><BR><a href="https://cygwin.com/cgit/cygwin-packages/sox/tree">Patches</a> </td>
+	<td style="text-align:left;"> ORPHANED </td>
+	<td style="text-align:left;"> 14.4.2 with patches from fedoraproject </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-Debian.html">Debian</a> </td>
+	<td style="text-align:left;"> <a href="http://packages.debian.org/sox">Package</a><BR><a href="https://sources.debian.org/patches/sox/14.4.2+git20190427-3.5/">Patches</a><BR><a href="https://bugs.debian.org/cgi-bin/pkgreport.cgi?src=sox">Bugs</a><BR><a href="https://lists.debian.org/cgi-bin/search?P=sox&amp;B=Gdebian-multimedia">Mailing list</a> </td>
+	<td style="text-align:left;"> debian-multimedia@lists.debian.org </td>
+	<td style="text-align:left;"> 14.4.2 with 27 patches, 18 of which are for CVEs, and one more in sid </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Exherbo </td>
+	<td style="text-align:left;"> <a href="https://summer.exherbolinux.org/packages/media-sound/sox/index.html">Package</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> 14.4.2 with no patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-Fedora.html">Fedora</a> </td>
+	<td style="text-align:left;"> <a href="https://packages.fedoraproject.org/pkgs/sox">Package</a><BR><a href="https://src.fedoraproject.org/rpms/sox/tree/rawhide">Patches</a><BR><a href="https://bugzilla.redhat.com/buglist.cgi?component=sox">Issues</a> </td>
+	<td style="text-align:left;"> The last committer is Florian Weimer <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#102;&#119;&#101;&#105;&#x6d;&#101;&#114;&#64;&#114;&#x65;&#100;&#104;&#97;&#116;&#46;&#99;&#x6f;&#x6d;">&#x66;&#119;&#x65;&#105;&#x6d;&#x65;&#x72;&#x40;&#x72;&#101;&#x64;&#x68;&#x61;&#x74;&#x2e;&#99;&#111;&#x6d;</a> </td>
+	<td style="text-align:left;"> 14.4.2 with 13 patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-FreeBSD.html">FreeBSD</a> </td>
+	<td style="text-align:left;"> <a href="https://www.freshports.org/audio/sox">Package</a><BR><a href="https://codeberg.org/FreeBSD/freebsd-ports/src/branch/main/audio/sox/files">Patches</a> </td>
+	<td style="text-align:left;"> dnelson@allantgroup.com </td>
+	<td style="text-align:left;"> gentoo&#8217;s distfile of 42b355 with 2 patches: <a href="https://cgit.freebsd.org/ports/commit/?id=0613b0fd68faf2d13925745831b046ed306dbbb8">&#8220;Fix man page&#8221;</a> and &#8220;src/output.c:flow()&#8221; </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-Gentoo.html">Gentoo</a> </td>
+	<td style="text-align:left;"> <a href="https://gitweb.gentoo.org/repo/gentoo.git/tree/media-sound/sox/sox-14.4.2_p20210509-r2.ebuild">ebuild</a> </td>
+	<td style="text-align:left;"> sound@gentoo.org </td>
+	<td style="text-align:left;"> 42b355 with two build system fixes </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> GNU Guix </td>
+	<td style="text-align:left;"> <a href="https://packages.guix.gnu.org/packages/sox/14.4.2/">Package</a><BR><a href="https://issues.guix.gnu.org/search?query=sox%2014.4.2%20is:open">Issues</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> 14.4.2 with no patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Gobolinux </td>
+	<td style="text-align:left;"> <a href="https://github.com/gobolinux/Recipes/blob/master/Sox/14.4.2/Recipe">Recipe</a> </td>
+	<td style="text-align:left;"> Hisham Muhammad <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#x68;&#105;&#115;&#x68;&#x61;&#109;&#x40;&#x67;&#111;&#x62;&#x6f;&#x6c;&#x69;&#x6e;&#117;&#120;&#46;&#x6f;&#x72;&#103;">&#x68;&#105;&#115;&#x68;&#97;&#109;&#64;&#x67;&#111;&#x62;&#111;&#108;&#105;&#x6e;&#117;&#120;&#46;&#x6f;&#114;&#103;</a> </td>
+	<td style="text-align:left;"> 14.4.2 with no patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Haiku </td>
+	<td style="text-align:left;"> <a href="https://github.com/haikuports/haikuports/blob/master/media-sound/sox/sox-14.4.2.recipe">Recipe</a><BR><a href="https://github.com/haikuports/haikuports/tree/master/media-sound/sox/patches">Patches</a> </td>
+	<td style="text-align:left;"> aarroyoc <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#97;&#x64;&#114;&#105;&#x61;&#x6e;&#x2e;&#97;&#114;&#x72;&#111;&#x79;&#111;&#99;&#x61;&#x6c;&#x6c;&#x65;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#97;&#100;&#x72;&#105;&#97;&#110;&#x2e;&#x61;&#x72;&#114;&#x6f;&#121;&#x6f;&#x63;&#x61;&#108;&#108;&#101;&#x40;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#x6f;&#x6d;</a> </td>
+	<td style="text-align:left;"> 14.4.2 with one build system fix </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Homebrew </td>
+	<td style="text-align:left;"> <a href="https://formulae.brew.sh/formula/sox">Package</a><BR><a href="https://github.com/Homebrew/homebrew-core/blob/3f8e8c8f8cf7671ad134464f6eee2f82cb8f22b2/Formula/s/sox.rb">Formula</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> 14.4.2 with 2 patches, one build system and one by Eric Wong </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> KaOS </td>
+	<td style="text-align:left;"> <a href="https://kaosx.us/packages/view.php?name=main/sox-14.4.2-13">Package</a><BR><a href="https://github.com/KaOSx/main/tree/master/sox">Patches</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> 14.4.2 with one patch for ffmpeg0.11 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> LiGurOS </td>
+	<td style="text-align:left;"> <a href="https://gitlab.com/liguros/liguros-repo/-/tree/stable/media-sound/sox">Repository</a></td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> sox-14.4.2_p20210509 Gentoo derivative </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Macports </td>
+	<td style="text-align:left;"> <a href="https://ports.macports.org/port/sox/details/">Package and Issues</a><BR><a href="https://github.com/macports/macports-ports/blob/master/audio/sox/Portfile">Portfile</a><BR><a href="https://github.com/macports/macports-ports/tree/master/audio/sox/files">Patches</a> </td>
+	<td style="text-align:left;"> No maintainer </td>
+	<td style="text-align:left;"> 14.4.2 with 2 patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Mageia </td>
+	<td style="text-align:left;"> <a href="http://sophie.zarb.org/rpms/105748d9b69c7cca6fb7015e9d2337fa/files">Package</a><BR><a href="http://sophie.zarb.org/rpms/105748d9b69c7cca6fb7015e9d2337fa/files">Patches and RPM spec</a> </td>
+	<td style="text-align:left;"> zezinho </td>
+	<td style="text-align:left;"> &#8220;sox-20200117.tar.xz&#8221; snapshot with 7 CVE patches from Debian </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> MSYS2 mingw </td>
+	<td style="text-align:left;"> <a href="https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-sox">Package and patch</a> </td>
+	<td style="text-align:left;"> Wolfgang Stöggl <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x63;&#x37;&#50;&#53;&#x37;&#x38;&#x40;&#x79;&#97;&#x68;&#111;&#111;&#x2e;&#x64;&#x65;">&#99;&#x37;&#x32;&#53;&#55;&#x38;&#x40;&#x79;&#97;&#104;&#x6f;&#111;&#x2e;&#100;&#x65;</a> </td>
+	<td style="text-align:left;"> 14.4.2 with one patch </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> NixOS </td>
+	<td style="text-align:left;"> <a href="https://search.nixos.org/packages?show=sox">Package</a> </td>
+	<td style="text-align:left;"> Marc Weber <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#109;&#x61;&#114;&#99;&#111;&#x2d;&#111;&#119;&#101;&#x62;&#101;&#114;&#64;&#103;&#x6d;&#120;&#46;&#x64;&#101;">&#109;&#97;&#x72;&#99;&#111;&#x2d;&#x6f;&#x77;&#x65;&#x62;&#x65;&#x72;&#64;&#x67;&#109;&#x78;&#x2e;&#x64;&#101;</a> </td>
+	<td style="text-align:left;"> Based on 42b355 with patch <a href="https://github.com/NixOS/nixpkgs/commit/42e689e5bddb852801bd1fd8acb11ceab758f67c">0001-musl-rewind-pipe-workaround</a></td>
+</tr>
+<tr>
+	<td style="text-align:left;"> nixpkgs </td>
+	<td style="text-align:left;"> <a href="https://github.com/NixOS/nixpkgs/tree/release-24.05/pkgs/applications/misc/audio/sox">Package</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> As for NixOS </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-OpenBSD.html">OpenBSD</a> </td>
+	<td style="text-align:left;"> <a href="https://www.freshports.org/audio/sox">Package</a> </td>
+	<td style="text-align:left;"> dnelson@allantgroup.com </td>
+	<td style="text-align:left;"> 42b355 with 7 patches. See <a href="https://www.mail-archive.com/ports%40openbsd.org/msg107748.html">this post</a> </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-OpenEmbedded.html">OpenEmbedded</a> </td>
+	<td style="text-align:left;"> <a href="https://layers.openembedded.org/layerindex/recipe/2270">Package &amp; patches</a><BR><a href="https://git.openembedded.org/meta-openembedded/tree/meta-multimedia/recipes-multimedia/sox/sox_14.4.2.bb?h=master">Recipe</a> </td>
+	<td style="text-align:left;"> Koen Kooi koen@dominion.thruhere.net </td>
+	<td style="text-align:left;"> sox-14.4.2 with 3 patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> OpenEuler </td>
+	<td style="text-align:left;"> <a href="https://gitee.com/src-openeuler/sox/tree/openEuler-23.09/">Package and patches</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> sox-14.4.2.0.modified with 11 patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> OpenIndiana </td>
+	<td style="text-align:left;"> <a href="https://github.com/OpenIndiana/oi-userland/tree/7942b0829973c7a732d67ca3e0bb240679fac40e/components/multimedia/sox">Package</a><BR><a href="https://github.com/OpenIndiana/oi-userland/tree/7942b0829973c7a732d67ca3e0bb240679fac40e/components/multimedia/sox/patches">Patches</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> 14.4.2 with 3 patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> openmamba </td>
+	<td style="text-align:left;"> <a href="https://openmamba.org/en/packages/?tag=base&amp;pkg=sox.source">Package</a> </td>
+	<td style="text-align:left;"> silvan </td>
+	<td style="text-align:left;"> 14.4.2 apparently with no patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> OpenMandriva </td>
+	<td style="text-align:left;"> <a href="https://github.com/OpenMandrivaAssociation/sox">Package</a> </td>
+	<td style="text-align:left;"> Last commit by berolinux (Bernhard Rosenkraenzer) </td>
+	<td style="text-align:left;"> 14.4.2 with no patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> OpenSUSE </td>
+	<td style="text-align:left;"> <a href="https://packagehub.suse.com/packages/sox/">Package</a><BR><a href="https://packagehub.suse.com/packages/sox/14_4_2-bp155_3_3_1">Patches</a> </td>
+	<td style="text-align:left;"> packagehub@suse.com </td>
+	<td style="text-align:left;"> 14.4.2 with 16 CVE patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> OpenWrt </td>
+	<td style="text-align:left;"> <a href="https://openwrt.org/packages/pkgdata/sox">Package</a><BR><a href="https://github.com/openwrt/packages/tree/master/sound/sox">Git tree</a><BR><a href="https://github.com/openwrt/packages/tree/master/sound/sox/patches">Patches</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> 14.4.2 with 3 patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> OS4DEPOT </td>
+	<td style="text-align:left;"> <a href="http://os4depot.net/index.php?function=showfile&amp;file=audio/convert/sox.lha">Package</a> </td>
+	<td style="text-align:left;"> Submitter: Matthias Muench </td>
+	<td style="text-align:left;"> 14.2.0 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Parabola </td>
+	<td style="text-align:left;"> <a href="https://www.parabola.nu/packages/?q=sox">Package</a> </td>
+	<td style="text-align:left;"> Last Packager: Andreas Baumann <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x6d;&#x61;&#105;&#108;&#x40;&#x61;&#x6e;&#100;&#114;&#x65;&#97;&#x73;&#x62;&#97;&#x75;&#109;&#97;&#x6e;&#x6e;&#x2e;&#x63;&#99;">&#x6d;&#x61;&#x69;&#x6c;&#64;&#x61;&#x6e;&#100;&#x72;&#x65;&#x61;&#x73;&#x62;&#97;&#x75;&#x6d;&#97;&#110;&#x6e;&#46;&#99;&#99;</a> </td>
+	<td style="text-align:left;"> &#8220;This package comes from Arch&#8221; </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Pisi Linux </td>
+	<td style="text-align:left;"> <a href="https://github.com/pisilinux/main/tree/master/multimedia/sound/sox">Package</a> </td>
+	<td style="text-align:left;"> admins@pisilinux.org </td>
+	<td style="text-align:left;"> Git snapshot? Last updated 2020&#8211;02&#8211;03 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> pkgsrc </td>
+	<td style="text-align:left;"> <a href="https://pkgsrc.se/audio/sox">Package</a><BR><a href="http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/audio/sox/patches/">Patches</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> Appears to be 14.4.2 with 5 patches and some translations in the spec file </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> PLD LINUX </td>
+	<td style="text-align:left;"> <a href="https://git.pld-linux.org/?p=packages/sox.git">Package</a><BR><a href="https://git.pld-linux.org/?p=packages/sox.git;a=tree">Patches</a> </td>
+	<td style="text-align:left;"> Last commit by Jakub Bogusz <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#113;&#x62;&#111;&#x6f;&#115;&#104;&#x40;&#x70;&#x6c;&#100;&#45;&#108;&#105;&#x6e;&#117;&#120;&#x2e;&#111;&#x72;&#x67;">&#113;&#98;&#x6f;&#111;&#115;&#104;&#x40;&#112;&#108;&#x64;&#x2d;&#x6c;&#105;&#110;&#117;&#x78;&#46;&#111;&#114;&#x67;</a> </td>
+	<td style="text-align:left;"> 14.4.2 with 3 patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> PureOS </td>
+	<td style="text-align:left;"> <a href="https://software.pureos.net/package/src/pureos/landing/sox">Package</a> </td>
+	<td style="text-align:left;"> Maintainer: debian-multimedia@lists.debian.org<BR>Uploaders: Dennis Braun <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#x64;&#95;&#x62;&#114;&#97;&#x75;&#x6e;&#x40;&#107;&#x61;&#x62;&#x65;&#x6c;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x64;&#101;">&#100;&#x5f;&#98;&#114;&#x61;&#117;&#x6e;&#64;&#x6b;&#97;&#98;&#101;&#108;&#x6d;&#97;&#x69;&#108;&#x2e;&#100;&#x65;</a>, Jaromír Mikeš <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#x6d;&#105;&#114;&#x61;&#46;&#109;&#105;&#x6b;&#101;&#115;&#x40;&#x73;&#x65;&#122;&#x6e;&#x61;&#109;&#46;&#x63;&#x7a;">&#109;&#x69;&#114;&#97;&#x2e;&#x6d;&#105;&#107;&#x65;&#x73;&#64;&#115;&#101;&#x7a;&#110;&#x61;&#x6d;&#46;&#99;&#x7a;</a> </td>
+	<td style="text-align:left;"> sox_14.4.2+git20190427 Debian derivative with Debian&#8217;s 28 patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Rosa </td>
+	<td style="text-align:left;"> <a href="https://abf.io/import/sox">Package</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> 14.4.2 with 12 CVE patches from Fedora and 6 bug fixes </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Scoop </td>
+	<td style="text-align:left;"> <a href="https://github.com/ScoopInstaller/Main/blob/master/bucket/sox.json">sox.json</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> 14.4.2 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Slackware </td>
+	<td style="text-align:left;"> <a href="https://packages.slackware.com/?r=slackware-current&amp;p=sox-14.4.2-i586-9.txz">Page</a> </td>
+	<td style="text-align:left;"> </td>
+	<td style="text-align:left;"> Couldn&#8217;t find the source. Seems plain 14.4.2 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> SliTaz </td>
+	<td style="text-align:left;"> <a href="https://pkg.slitaz.org/?info=sox">Package</a> </td>
+	<td style="text-align:left;"> Pascal Bellard &lt;pascal.bellard​@slitaz.org&gt; </td>
+	<td style="text-align:left;"> 14.4.2 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Solus </td>
+	<td style="text-align:left;"> <a href="https://github.com/getsolus/packages/tree/main/packages/s/sox/">Package</a> </td>
+	<td style="text-align:left;"> Packager: Jakob Gezelius <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x6a;&#97;&#x6b;&#x6f;&#98;&#64;&#x6b;&#x6e;&#117;&#x67;&#101;&#x6e;&#46;&#x6e;&#x75;">&#x6a;&#x61;&#107;&#111;&#98;&#64;&#107;&#x6e;&#x75;&#x67;&#101;&#110;&#46;&#110;&#117;</a> </td>
+	<td style="text-align:left;"> 14.4.2 with no patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> <a href="Distro-sox.html">sox.sf.net</a> </td>
+	<td style="text-align:left;"> <a href="https://sox.sf.net">Package</a> </td>
+	<td style="text-align:left;"> mans@mansr.com </td>
+	<td style="text-align:left;"> 14.4.2 with 184 patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Spack </td>
+	<td style="text-align:left;"> <a href="https://packages.spack.io/package.html?name=sox">Package</a> </td>
+	<td style="text-align:left;"> sox is looking for a maintainer! </td>
+	<td style="text-align:left;"> 14.4.2 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> T2 SDE </td>
+	<td style="text-align:left;"> <a href="http://t2sde.org/packages/sox">Package</a> </td>
+	<td style="text-align:left;"> Rene Rebe <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x72;&#101;&#110;&#101;&#x40;&#x74;&#50;&#x2d;&#x70;&#114;&#x6f;&#x6a;&#101;&#x63;&#x74;&#x2e;&#111;&#114;&#x67;">&#x72;&#x65;&#110;&#x65;&#64;&#116;&#x32;&#45;&#x70;&#x72;&#x6f;&#x6a;&#101;&#x63;&#x74;&#46;&#x6f;&#x72;&#x67;</a> </td>
+	<td style="text-align:left;"> 14.4.2 with one patch #67 </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Termux </td>
+	<td style="text-align:left;"> <a href="https://github.com/termux/termux-packages/tree/858771625/packages/sox">Package</a> </td>
+	<td style="text-align:left;"> &#8220;@termux&#8221; </td>
+	<td style="text-align:left;"> 14.4.2 with 1 patch for Android </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Trisquel </td>
+	<td style="text-align:left;"> <a href="https://packages.trisquel.org/source/aramo-security/sox">Package</a><BR><a href="https://packages.trisquel.org/changelogs/pool/main/s/sox/sox_14.4.2+git20190427-2/changelog">ChangeLog</a> </td>
+	<td style="text-align:left;"> It says that the maintainer is Ubuntu Developers </td>
+	<td style="text-align:left;"> Seems to be a copy of Debian or Ubuntu </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> Ubuntu </td>
+	<td style="text-align:left;"> <a href="https://packages.ubuntu.com/source/noble/sox">Package</a><BR><a href="https://changelogs.ubuntu.com/changelogs/pool/universe/s/sox/sox_14.4.2+git20190427-4build4/changelog">ChangeLog</a><BR><a href="https://launchpad.net/ubuntu/+source/sox/+bugs">Bug reports</a> </td>
+	<td style="text-align:left;"> Ubuntu Developers ubuntu-devel-discuss@lists.ubuntu.com </td>
+	<td style="text-align:left;"> Debian derivative, maybe with extra patches </td>
+</tr>
+<tr>
+	<td style="text-align:left;"> VoidLinux </td>
+	<td style="text-align:left;"> <a href="https://github.com/void-linux/void-packages/tree/master/srcpkgs/sox">Package</a> </td>
+	<td style="text-align:left;"> Leah Neukirchen <a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#x3a;&#x6c;&#x65;&#x61;&#x68;&#64;&#x76;&#117;&#120;&#x75;&#x2e;&#111;&#114;&#x67;">&#x6c;&#101;&#97;&#x68;&#x40;&#x76;&#x75;&#x78;&#x75;&#46;&#111;&#x72;&#103;</a> </td>
+	<td style="text-align:left;"> 14.4.2 with one patch #67 </td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="sources">Sources</h3>
+
+<ul>
+<li><a href="https://repology.org/projects/sox">Software distributions on Repology that package sox</a></li>
+<li><a href="https://pkgs.org/search/?q=sox">Software distributions on pkgs.org that package sox</a></li>
+</ul>
+
+<h2 id="notesforpackagemaintainers">Notes for package maintainers</h2>
+
+<h3 id="sox_ngcomparedtosox.sf.net"><code>sox_ng</code> compared to <code>sox.sf.net</code></h3>
+
+<h4 id="cvesandbugsarefixed">CVEs and bugs are fixed</h4>
+
+<p><code>sox_ng-14.4.3</code> is a hard fork of <code>sox-14.4.2</code> including all the
+Debian and Fedora patches with more successful fixes for some of the CVEs,
+fixes all the unaddressed CVEs and more bug fixes from the distros.</p>
+
+<p>There is <a href="https://codeberg.org/martinwguy/sox_test">a regression test suite</a>
+that runs SoX against a collection of the test files from CVEs and bug reports</p>
+
+<p>For a summary of how <code>sox-14.4.2</code>, <code>sox.sf.net</code>, Debian and <code>sox_ng</code> fare,
+see <a href="Testing.html">Testing</a>.</p>
+
+<h4 id="copyrightisnowregular">Copyright is now regular</h4>
+
+<p>The copyright status of SoX was a mess (see <a href="Copyright.html">Copyright</a>)
+but in <code>sox_ng</code> it has been sorted out
+thanks to input from the FSF&#8217;s legals
+and to confirmations from dodgy files' original authors.</p>
+
+<p>The package as a whole is GPLv2
+because <code>src/opus.c</code> is based on <code>oggdec.c</code> which is GPLv2-only
+but individual source files retain their more permissive,
+GPLv2-compatible licences.</p>
+
+<h4 id="regularreleases">Regular releases</h4>
+
+<p><code>sox_ng</code> has time-based releases.
+The first micro release with bug fixes is scheduled for 18 August 2024
+and the first minor release with new features for 18 October 2024,
+with a six-monthly cycle for each.</p>
+
+<h4 id="microreleasebugfixesonly">Micro release (bug fixes) only</h4>
+
+<p>If your distro opted for basing its package on the 2021 top of the <code>sox.sf.net</code>
+git tree (affectionately known as 42b355), your users may lose some features
+if you move the the first <code>sox_ng</code> micro release.
+Other than bug fixes and changes and better input validation,
+the only ones I am aware of are:</p>
+
+<ul>
+<li><code>spectrogram</code>: Add <code>-n</code> flag to normalise the brightness of the graph
+according to its highest peak</li>
+<li><code>spectrogram</code>: remove arbitrary height limit of 8193 pixels</li>
+<li>Handle 192k sample rates in RIAA files</li>
+<li>Allow <code>combine</code> to merge a single file</li>
+<li>Handling of ID3 tags in more formats</li>
+<li><code>WAV</code> files: allow the number of &#8220;valid bits&#8221; to be less than the sample size</li>
+</ul>
+
+<h3 id="replacingsoxisoptional">Replacing <code>sox</code> is optional</h3>
+
+<p><code>sox_ng</code> installs as <code>sox_ng</code>, <code>{soxi,play,rec}_ng</code>, <code>sox_ng.h</code>,
+<code>libsox_ng.{a,la,so}</code>, <code>sox_ng.pc</code> and similarly for the manual pages
+but if you <code>./configure --enable-replace</code> it also makes links
+<code>sox</code>, <code>play</code>, <code>sox.h</code> and so on so that other programs find
+what they are used to.</p>
+
+<p>According to your distro&#8217;s norms, you may prefer to enable these links
+and make it a supplant the original <code>sox</code> (a &#8220;conflicting alternative&#8221;)
+or you may prefer to use your distro&#8217;s &#8220;alternatives&#8221; mechanism
+so that users can choose which to use.</p>
+<hr>Generated by <tt>makehtml.sh</tt> on Sat Sep 14 08:24:28 PM CEST 2024</body>

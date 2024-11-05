@@ -1,0 +1,223 @@
+<html><head><title>Architecture - sox_ng wiki</title></head>
+<body><p align=center>sox_ng wiki - Architecture</p>
+<hr>
+<h1 id="architecture">Architecture</h1>
+
+<p>SoX_ng is about building a mechanism for making regular releases of
+SoX using exiting work. Its primary target is the maintainers of
+<code>sox</code> packages in software distributions and incidentally and indirectly
+the developera and users of SoX.</p>
+
+<h2 id="terminology">Terminology</h2>
+
+<ul>
+<li><code>sox</code> means <a href="http://sox.sf.net">sox.sf.net</a></li>
+<li>SoX means the program and its spirit in any of its incarnations</li>
+<li><code>sox_ng</code> means the hard fork of <code>sox-14.4.2</code></li>
+<li>SoX_ng means the project to make and maintain <code>sox_ng</code></li>
+</ul>
+
+<h2 id="thekindofsoftwarewereworkingon">The kind of software we&#8217;re working on</h2>
+
+<p>As &#8220;packaged software&#8221;, similar to a software tool where the software
+is audio data, SoX is a &#8220;Mission-Critical System&#8221; for which spiral
+development and staged or evolutionary delivery are most effective.</p>
+
+<h2 id="problemdefinition">Problem Definition</h2>
+
+<p>SoX has not had a release in the nine years since Chris Bagwell&#8217;s last
+release in 2015. The sole maintainer since then has done some good work
+resolving bugs but now seems to do more harm than good. Neither he nor
+the only other person with admin rights on 'sox.sf.net` will relinquish
+control of it, and the 37,000 downloads a week and the Donate button that
+pays into the maintainer&#8217;s personal PayPal account may be an influence
+on this position.</p>
+
+<p>The distros that package SoX all have a different slew of patches to fix CVEs
+and other bugs; others package a recent snapshot from the git tree which has
+more bugs than the last release. See <a href="Testing.html">Testing</a>.</p>
+
+<p>Development work on SoX has fragmented. There are hundreds of forks on github,
+dozens of bug fixes and improvements with patches in the <code>sox.sf.net</code>
+issue tracker, all ignored. Most of the active and best developers have
+gone away to work on other things, to work on their own copies of SoX or
+to raise a family.</p>
+
+<p>The objective of SoX_ng is to remedy this situation so that:</p>
+
+<ul>
+<li>all distros can package the same working, bug-free version of SoX</li>
+<li>developers can work on SoX knowing that their work will not be
+ignored and wasted</li>
+</ul>
+
+<p>A second objective is to clarify and regularize SoX&#8217;s
+<a href="Copyright.html">copyright position</a>.</p>
+
+<h2 id="programorganization">Program Organization</h2>
+
+<ul>
+<li>Facilitate distro maintainers' work by providing regular releases
+with bug fixes and with functional enhancements</li>
+<li>Reassure SoX developers that their work can be included in a release
+within predictable time</li>
+<li>Unify the current plethora of independent development efforts</li>
+</ul>
+
+<h2 id="majorclasses">Major Classes</h2>
+
+<p>It&#8217;s not clear what this means for <code>sox_ng</code>.</p>
+
+<h2 id="datadesign">Data Design</h2>
+
+<ul>
+<li>Mailing lists: one for users and one for developers</li>
+<li>Wiki</li>
+<li>Code repository</li>
+<li>Issue tracker</li>
+</ul>
+
+<h2 id="businessrules">Business Rules</h2>
+
+<ul>
+<li>A way to make donations</li>
+<li>[Bounties]</li>
+<li>Public <a href="Accounting.html">Accounting</a></li>
+</ul>
+
+<h2 id="userinterfacedesign">User Interface Design</h2>
+
+<ul>
+<li>Web-based: provided by the hosting platforms</li>
+<li>Command line: provided by <code>git</code></li>
+<li>Mailing lists: use your favorite email client</li>
+<li>A guide to interacting with <code>sox_ng</code> is in <code>README.md</code>
+in the top level of the source code</li>
+</ul>
+
+<h2 id="resourcemanagement">Resource Management</h2>
+
+<p>The only finite resource is my time, scheduled in two-monthly batches
+for the micro and minor releases. A major release may be considered.</p>
+
+<h2 id="security">Security</h2>
+
+<p>The user <code>sox_ng</code> is registered on various platforms controlled by
+the email address <code>sox_ng@proton.me</code>. That should become <code>sox_ng@fastmail.com</code></p>
+
+<p>The passwords for the <code>sox_ng</code> accounts are currently held by Martin Guy and,
+where necessary, the phone number for SMSes and a legal address are those
+of Martin Guy.</p>
+
+<h2 id="performanceandscalability">Performance and Scalability</h2>
+
+<p>Done by the hosting platforms.</p>
+
+<h2 id="interoperability">Interoperability</h2>
+
+<p>sox_ng&#8217;s data need to be shared with</p>
+
+<ul>
+<li>the distros that package SoX</li>
+<li><code>sox.sf.net</code>&#8217;s repository and issue tracker</li>
+<li>SoX developers
+These are done manually by email and by copy-pasting text and patches.</li>
+</ul>
+
+<h2 id="internationalizationlocalization">Internationalization/Localization</h2>
+
+<ul>
+<li>The web and command line interfaces are internationalized and localized
+by the hosting platform and by upstream command-line tools</li>
+<li><code>sox_ng</code>-specific content is mastered in US English</li>
+<li>Messages from SoX&#8217;s code are not currently internationalized but should be</li>
+</ul>
+
+<h2 id="inputoutputerrors">Input/Output errors</h2>
+
+<p>It&#8217;s not clear what this means for <code>sox_ng</code>.</p>
+
+<h2 id="faulttolerance">Fault Tolerance</h2>
+
+<p>Hosting platform downtime and malfunctions can be guarded against by</p>
+
+<ul>
+<li>individual developers having clones of the <code>sox_ng</code> code and wiki
+repositories and a download of the issues</li>
+<li>the web presences are mirrored on a different hosting platform
+as well as submitted them to <code>archive.org</code></li>
+<li>the mailing lists being archived by subscribing <code>mail-archive.com</code> to them</li>
+</ul>
+
+<h2 id="errorprocessing">Error Processing</h2>
+
+<ul>
+<li>Mistakes in writing issues, the wiki and the code&#8217;s documentation
+are detected by humans and handled either directly by committers
+or by email to the mailing lists to be acted on by committers.</li>
+<li>Mistakes in commits that impact compilability and functionality
+can be detected by by a hosting platform&#8217;s Continuous Integration service
+using SoX&#8217;s built-in test suite and the regression test suite.</li>
+</ul>
+
+<h2 id="architecturalfeasibility">Architectural Feasibility</h2>
+
+<p>A time-based release schedule means that each release addresses issues
+resolved in time for its date.</p>
+
+<p>At present there is a single point of failure, the sole SoX_ng maintainer,
+to be addressed by having more than one holder of <code>sox_ng</code>&#8217;s accounts' keys.</p>
+
+<h2 id="overengineering">Overengineering</h2>
+
+<p>Each of the data components should have two instances:</p>
+
+<ul>
+<li>Code repository: mirrored on disroot.org</li>
+<li>Issue tracker: mirrored on disroot.org</li>
+<li>Wiki: mirrored on disroot.org</li>
+<li>Mailing lists: How do you make live backups of mailing lists?</li>
+</ul>
+
+<h2 id="buyvs.build">Buy vs. Build</h2>
+
+<p>The web platforms are provided gratis and <code>sox_ng</code> cannot afford
+to pay anyone to performs its tasks.</p>
+
+<h2 id="reuse">Reuse</h2>
+
+<p>For its first releases it reuses existing work:</p>
+
+<h3 id="code">Code</h3>
+
+<ul>
+<li><code>sox</code>&#8217;s git repository from release 14.4.2</li>
+</ul>
+
+<h3 id="issues">Issues</h3>
+
+<ul>
+<li>CVE reported against <code>sox-14.4.2</code> on <code>cve.mitre.org</code></li>
+<li>bugs and feature requests on <code>sox.sf.net</code>&#8217;s issue tracker</li>
+<li>issues open against <code>sox-14.4.2</code> in distros' issue trackers</li>
+</ul>
+
+<h3 id="patches">Patches</h3>
+
+<ul>
+<li>patches in the distros that package <code>sox</code></li>
+<li>patches proposed on <code>sox.sf.net</code>&#8217;s issue tracker</li>
+<li>patches posted to various mailing lists, found by following references
+in the issues' reused sources</li>
+<li>commits and pull requests in the <a href="Forks.html">forks</a> of <code>sox</code>,
+including commits to <code>sox.sf.net</code> since 14.4.2</li>
+</ul>
+
+<p>It would be useful to have automatic notification of new commits
+to <code>sox</code>&#8217;s forks and new or updated issues in distros' trackers.</p>
+
+<h2 id="changestrategy">Change Strategy</h2>
+
+<p>Changes to <code>sox_ng</code> can be proposed on the mailing lists
+and acted on (or not) by the release manager.</p>
+<hr>Generated by <tt>makehtml.sh</tt> on Sat Sep 14 08:24:28 PM CEST 2024</body>

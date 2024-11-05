@@ -1,0 +1,176 @@
+<html><head><title>Hosting - sox_ng wiki</title></head>
+<body><p align=center>sox_ng wiki - Hosting</p>
+<hr>
+<h1 id="hosting">Hosting</h1>
+
+<h2 id="requirements">Requirements</h2>
+
+<p><code>SoX_ng</code> needs</p>
+
+<ul>
+<li>A code repository</li>
+<li>A wiki</li>
+<li>An issue tracker</li>
+<li>Mailing lists</li>
+<li>A secure email address to register the above and for private emails</li>
+</ul>
+
+<h2 id="hostingplatforms">Hosting platforms</h2>
+
+<h3 id="sourceforge.net">sourceforge.net</h3>
+
+<ul>
+<li>the historic home of <code>sox</code></li>
+<li>a closed-source platform that locks projects in</li>
+<li>where all the links on the web point to as its home page</li>
+<li>where users and automatic systems will look for new releases</li>
+<li>if we can admin the existing project, it&#8217;s less stressful for distros and will update the 37,000 people per week who download from there</li>
+<li>becoming admin on the existing project appears not to be possible</li>
+<li>unreliable: you couldn&#8217;t post to its mailing lists for a week this year</li>
+<li>old and crappy. Very 90&#8217;s.</li>
+</ul>
+
+<h3 id="github.com">github.com</h3>
+
+<p>The home of most forks of <code>sox</code></p>
+
+<ul>
+<li>commercial</li>
+<li>owned by Microsoft</li>
+<li>Last year, they stopped me being able to push to my repositories
+by insisting on 2FA that I was unable to set up</li>
+</ul>
+
+<h3 id="gitlab.com">gitlab.com</h3>
+
+<p>The most popular alternative for those running away from github</p>
+
+<ul>
+<li>interface looks like github</li>
+<li>seems ok but is still <code>.com</code></li>
+<li>Technically nothing special</li>
+</ul>
+
+<h3 id="codeberg.org">codeberg.org</h3>
+
+<ul>
+<li>managed by a large and stable non-profit association</li>
+<li>org is also active in development of the platform</li>
+<li>support line is fast and helpful</li>
+<li>runs on a modern open-source platform, <a href="forgejo.org"><code>forgejo</code></a></li>
+<li>you can switch between two users without logging out and logging in again</li>
+<li>always up (so far&#8230;)</li>
+<li>does not provide mailing lists</li>
+</ul>
+
+<h3 id="disroot.org">disroot.org</h3>
+
+<ul>
+<li>is managed by a non-profit organization &#8220;based on principles of
+freedom, privacy, federation and decentralization: No tracking,
+no ads, no profiling, no data mining&#8221;</li>
+<li>provides many free software services, not just repository hosting</li>
+<li>has another free <code>forgejo</code> instance</li>
+<li>provides free email accounts but not mailing lists</li>
+<li>You have to create separate accounts for different services;
+I&#8217;ve created a <code>forgejo</code> account for <code>sox_ng</code> but have been unable
+to create a generic account for other services because the
+password-strength JavaScript refuses everything as &#8220;too weak&#8221;</li>
+<li>The support line does not answer</li>
+</ul>
+
+<h3 id="sourcehut.org">sourcehut.org</h3>
+
+<ul>
+<li>appears to be managed by a few individuals</li>
+<li>support line is helpful</li>
+<li>runs 100% open source software: for the repositories <code>forgeperf</code> which is lightweight and does not use javascript</li>
+<li>software is alpha and &#8220;Payment will be required later: From the beta onwards, unpaid accounts will be limited to read-only access to their own projects&#8221; and &#8220;We can terminate service at any time&#8221;</li>
+<li>the &#8220;ticket tracker&#8221; seems odd but &#8220;you can send a plaintext email with your bug report, whether or not you have an account&#8221;</li>
+<li>has had massive and complete outage due to a DDoS attack, and had their servers stolen while relocating a datacenter, so either someone hates them particularly or they are less capable than the others</li>
+<li>they provide mailing lists but you cannot subcribe to them without
+registering on sourcehut via its wevb interface.</li>
+</ul>
+
+<h3 id="savannah.nongnu.org">savannah.nongnu.org</h3>
+
+<ul>
+<li>managed by the Free Software Foundation</li>
+<li>high-visibility and a form of &#8220;grandad&#8217;s approval&#8221; of your project</li>
+<li>support line seems irritable but is strong on legal issues and has pro-bono lawyers</li>
+<li>gives better accessibility for the blind or partially sighted according to Eric Wong</li>
+<li>project registration is laborious and slow but this may result in improved quality. After over a month I have still been unable to test-drive it</li>
+<li>old and a bit crappy</li>
+<li>provides mailing lists</li>
+<li>only hosts GPLv3-or-later projects; <a href="Copyright.html"><code>SoX</code> is GPLv2-only</a></li>
+</ul>
+
+<h3 id="launchpad.net">launchpad.net</h3>
+
+<ul>
+<li>Managed by Canonical &#8220;Trusted open source for enterprises&#8221; but Ubuntu-centric</li>
+<li><code>sox_ng</code> needed to be private until its first release but to have a private repository you need a &#8220;commercial subscription&#8221; which expires within a few weeks unless you pay or are &#8220;approved&#8221; by Canonical.</li>
+<li>usernames cannot contain an underscore</li>
+</ul>
+
+<h3 id="protonmail.com">protonmail.com</h3>
+
+<ul>
+<li>Free accounts but it begs for money a lot</li>
+<li>Support&#8217;s replies are prompt</li>
+<li>If you open a personal account and a project account you have to
+pay two subscriptions to use IMAP. Already asked and refused.</li>
+<li>It claims to use end-to-end encryption but <em>they</em> send you the code to run
+so it would be easy to put something in it to send them your every thought
+as you type it if the NSA asked for it in their nice and irresistible ways</li>
+<li>You probably only get E2E encryption between two Proton accounts
+or two Tuta accounts</li>
+</ul>
+
+<h3 id="tutamail.com">tutamail.com</h3>
+
+<ul>
+<li>Another JS E2E platform with the same fundamental flaw as Protonmail</li>
+</ul>
+
+<h3 id="fastmail.com">fastmail.com</h3>
+
+<ul>
+<li>Seems OK, needs PGP for private emails.</li>
+<li>Normal people can&#8217;t set PGP up, but then normal people probably
+don&#8217;t need to talk with the secure email address</li>
+<li>The receipt they sent for sox_ng&#8217;s subscription was headed as being for
+<code>Keen.tea6429@fastmail.com</code> so I have no proof that I paid them.</li>
+<li>Their help line sends you a boilerplate reply the next day
+telling you to chat with their AI bot.</li>
+</ul>
+
+<h3 id="self-hosting">Self-hosting</h3>
+
+<p>A VPS with <code>forgejo</code>, a web server and an email server</p>
+
+<ul>
+<li>More secure</li>
+<li>More work</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<ul>
+<li><p>Host the repository, wiki and issue tracker on Codeberg
+with Disroot as a mirrored hot backup</p></li>
+<li><p>The private mail address is sox_ng@fastmail.com</p></li>
+<li><p>Make a PGP key pair for it and publish the public key</p></li>
+<li><p>I naïvely started with <code>sox_ng@proton.me</code> and that is still
+the controlling email address for the web resources</p></li>
+<li><p>The mailing list was @freelists.org but they refuse to let anyone else archive it (already asked; refused) so it is now</p>
+
+<ul>
+<li>email <a href="mailto:sox-ng@groups.io"><code>sox-ng@groups.io</code></a> to post,</li>
+<li>email <a href="mailto:sox-ng+subscribe@groups.io"><code>sox-ng+subscribe@groups.io</code></a>
+to subscribe and</li>
+<li>web <a href="https://groups.io/g/sox-ng"><code>groups.io/g/sox-ng</code></a> for both</li>
+</ul></li>
+<li><p>Have <code>mail-archive.com</code> back it up</p></li>
+</ul>
+<hr>Generated by <tt>makehtml.sh</tt> on Sat Sep 14 08:24:28 PM CEST 2024</body>

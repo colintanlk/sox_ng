@@ -1,0 +1,20 @@
+--- libao-1.2.0/src/ao_aixs.c	2012-02-14 01:46:06.000000000 +0100
++++ libao-1.2.0-sox_ng/src/ao_aixs.c	2024-08-24 13:22:03.000000000 +0200
+@@ -145,14 +145,14 @@
+           char buffer[80];
+           int fd;
+ 
+-          sprintf(buffer,"/dev/baud%d/1",id);
++          sprintf(buffer,"/dev/baud%d/1",internal->id);
+           fd = open(buffer, O_WRONLY);
+           if(fd<0){
+-            sprintf(buffer,"/dev/paud%d/1",id);
++            sprintf(buffer,"/dev/paud%d/1",internal->id);
+             fd = open(buffer, O_WRONLY);
+           }
+           if(fd<0){
+-            sprintf(buffer,"/dev/acpa%d/1",id);
++            sprintf(buffer,"/dev/acpa%d/1",internal->id);
+             fd = open(buffer, O_WRONLY);
+           }
+           if(fd<0) return 0;
